@@ -1,0 +1,2462 @@
+{
+  "AC-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all organizations operating NSS. b.1. At least annually if not otherwise defined in formal organizational policy b.2. At least annually if not otherwise defined in formal organizational policy",
+    "selected": true
+  },
+  "AC-2": {
+    "control_text": "a. [Assignment: organization-defined information system account types] e. [Assignment: organization-defined personnel or roles] f. [Assignment: organization-defined procedures or conditions] j. [Assignment: organization-defined frequency]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all NSS. e. Not appropriate to define at the CNSS level for all NSS. f. Not appropriate to define at the CNSS level for all NSS. j. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "AC-2(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-2(2)": {
+    "control_text": "[Selection: removes; disables] [Assignment: organization-defined time period for each type of account]",
+    "defined_value": "Disables Not to exceed 72 hours.",
+    "selected": true
+  },
+  "AC-2(3)": {
+    "control_text": "[Assignment: organization-defined time period].",
+    "defined_value": "Not to exceed 90 days.",
+    "selected": true
+  },
+  "AC-2(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-2(5)": {
+    "control_text": "[Assignment: organization-defined time-period of expected inactivity or description of when to log out]",
+    "defined_value": "At the end of the users standard work period unless otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "AC-2(7)": {
+    "control_text": "(c) [Assignment: organization-defined actions",
+    "defined_value": "(c) Disables (or revokes) privileged user account.",
+    "selected": true
+  },
+  "AC-2(9)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-2(10)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-2(11)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-2(12)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-2(13)": {
+    "control_text": "[Assignment: organization-defined time period]",
+    "defined_value": "30 minutes unless otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "AC-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-3(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-6": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-6(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-6(2)": {
+    "control_text": "[Assignment: organization-defined security functions or security-relevant information]",
+    "defined_value": "Privileged functions.",
+    "selected": true
+  },
+  "AC-6(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-6(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-6(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-6(8)": {
+    "control_text": "[Assignment: organization-defined software]",
+    "defined_value": "All",
+    "selected": true
+  },
+  "AC-6(9)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-6(10)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-7": {
+    "control_text": "a. [Assignment: organization-defined number] [Assignment: organization-defined time period] b. [Selection: locks the account/node for an [Assignment: organization-defined time period] [Assignment: organization-defined delay algorithm]]",
+    "defined_value": "3 15 minutes b. locks the account/node for at least 15 minutes, or until unlocked by an administrator. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "AC-7(2)": {
+    "control_text": "[Assignment: organization-defined mobile devices] [Assignment: organization-defined purging/wiping requirements/techniques] [Assignment: organization-defined number]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. 10",
+    "selected": false
+  },
+  "AC-8": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-9(3)": {
+    "control_text": "[Assignment: organization-defined security- related characteristics/parameters of the user’s account] [Assignment: organization-defined time period]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. Since last successful logon",
+    "selected": false
+  },
+  "AC-10": {
+    "control_text": "[Assignment: organization-defined account and/or account type] [Assignment: organization-defined number]",
+    "defined_value": "Non-Privileged Privileged maximum of 3 maximum of 3 sessions sessions",
+    "selected": true
+  },
+  "AC-11": {
+    "control_text": "a. [Assignment: organization-defined time period]",
+    "defined_value": "Not to exceed 30 minutes",
+    "selected": true
+  },
+  "AC-11(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-12": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-12(1)": {
+    "control_text": "(a) [Assignment: organization-defined information resources]",
+    "defined_value": "(a) All",
+    "selected": true
+  },
+  "AC-14": {
+    "control_text": "a. [Assignment: organization-defined user actions]",
+    "defined_value": "a. No user actions",
+    "selected": true
+  },
+  "AC-16": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-16(6)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-17": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-17(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-17(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-17(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-17(6)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-17(9)": {
+    "control_text": "[Assignment: organization-defined time period]",
+    "defined_value": "Low confidentiality or integrity impact: ...30 minutes Moderate confidentiality or integrity impact: ...20 minutes High confidentiality or integrity impact: ...10 minutes",
+    "selected": true
+  },
+  "AC-18": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-18(1)": {
+    "control_text": "[Selection (one or more): users; devices]",
+    "defined_value": "Both users and devices as appropriate. See supplemental guidance. Supplemental Guidance: devices to wireless networks (e.g., Wi-Fi) and users to enterprise services.",
+    "selected": true
+  },
+  "AC-18(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-18(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-18(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-19": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-19(5)": {
+    "control_text": "[Selection: full-device encryption; container encryption] [Assignment: organization-defined mobile devices]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. All mobile devices authorized to connect to the organization's ISs.",
+    "selected": true
+  },
+  "AC-20": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-20(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-20(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-20(3)": {
+    "control_text": "[Selection: restricts; prohibits]",
+    "defined_value": "Restricts",
+    "selected": true
+  },
+  "AC-21": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AC-22": {
+    "control_text": "d. [Assignment: organization-defined frequency]",
+    "defined_value": "d. Quarterly or as new information is posted.",
+    "selected": true
+  },
+  "AC-23": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AR-1": {
+    "control_text": "c. [Assignment: organization-defined allocation of budget and staffing] f. [Assignment: organization-defined frequency, at least biennially]",
+    "defined_value": "c. Not appropriate to define at the CNSS level for all NSS. f. At least biennially if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "AR-4": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "Continuously.",
+    "selected": false
+  },
+  "AR-5": {
+    "control_text": "b. [Assignment: organization-defined frequency, at least annually] [Assignment: organization-defined frequency, at least annually] c. [Assignment: organization-defined frequency, at least annually]",
+    "defined_value": "b. At least annually if not otherwise defined in formal organizational policy. At least annually if not otherwise defined in formal organizational policy. c. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "AT-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "AT-2": {
+    "control_text": "c. [Assignment: organization-defined frequency]",
+    "defined_value": "c. At least annually if not otherwise defined in formal organization.",
+    "selected": true
+  },
+  "AT-2(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AT-3": {
+    "control_text": "c. [Assignment: organization-defined frequency]",
+    "defined_value": "c. At least annually if not otherwise defined in formal organization.",
+    "selected": true
+  },
+  "AT-3(1)": {
+    "control_text": "[Assignment: organization-defined personnel or roles] [Assignment: organization-defined frequency]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. At least annually if not otherwise defined in formal organization policy or when sufficient changes are made to physical security systems.",
+    "selected": false
+  },
+  "AT-3(2)": {
+    "control_text": "[Assignment: organization-defined personnel or roles] [Assignment: organization-defined frequency]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. At least annually if not otherwise defined in formal organization policy or when sufficient changes are made to physical security systems.",
+    "selected": true
+  },
+  "AT-3(4)": {
+    "control_text": "[Assignment: organization-defined indicators of malicious code]",
+    "defined_value": "Minimally but not limited to indicators of potentially malicious code in suspicious email.",
+    "selected": true
+  },
+  "AT-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy. policy (AU-1).",
+    "selected": true
+  },
+  "AU-2": {
+    "control_text": "a. [Assignment: organization-defined auditable events] in  a.) along with the frequency of (or situation requiring) auditing for each identified event] d. [Assignment: organization-defined audited events (the subset of the auditable events defined",
+    "defined_value": "a. 1. Authentication events: (1)  Logons (Success/Failure) (2)  Logoffs (Success) 2. File and Objects events: (1)  Create (Success/Failure) (2)  Access (Success/Failure) (3)  Delete (Success/Failure) (4)  Modify (Success/Failure) (5)  Permission  Modification (Success/Failure) (6)  Ownership Modification (Success/Failure) 3. Writes/downloads to external devices/media (e.g., A-Drive, CD/DVD devices/printers) (Success/Failure) 4. Uploads from external devices (e.g., CD/DVD drives) (Success/Failure) 5. User and Group Management events: (1)  User add, delete, modify, suspend, lock (Success/Failure) (2)  Group/Role add, delete, modify (Success/Failure) 6. Use of  Privileged/Special Rights events: (1)  Security or audit policy changes (Success/Failure) (2)  Configuration changes (Success/Failure) 7. Admin or root-level access (Success/Failure) 8. Privilege/Role escalation (Success/Failure) 9. Audit and log data accesses (Success/Failure) 10. System reboot, restart and shutdown (Success/Failure) 11. Print to a device (Success/Failure) 12. Print to a file (e.g., pdf format) (Success/Failure) 13. Application (e.g., Firefox, Internet Explorer, MS Office Suite, etc.) initialization (Success/Failure) 14. Export of information (Success/Failure) include (e.g., to CDRW, thumb drives, or remote systems) 15. Import of information (Success/Failure) include (e.g., from CDRW, thumb drives, or remote systems) d. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "AU-2(3)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "At least annually if not otherwise defined in formal organizational policy",
+    "selected": true
+  },
+  "AU-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-3(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-3(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-4(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-5(1)": {
+    "control_text": "[Assignment: organization-defined personnel, roles, and/or locations] [Assignment: organization-defined time period] [Assignment: organization-defined percentage]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. Max of 75%",
+    "selected": true
+  },
+  "AU-5(2)": {
+    "control_text": "[Assignment: organization-defined real-time period] [Assignment: organization-defined personnel, roles, and/or locations] [Assignment: organization-defined audit failure events requiring real-time alerts]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. Minimally but not limited to: auditing software/hardware errors; failures in the audit capturing mechanisms; and audit storage capacity being reached or exceeded.",
+    "selected": true
+  },
+  "AU-6": {
+    "control_text": "a. [Assignment: organization-defined frequency] [Assignment: organization-defined inappropriate or unusual activity] b. [Assignment: organization-defined personnel or roles]",
+    "defined_value": "a. At least weekly (seven days) Not appropriate to define at the CNSS level for all NSS. b. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "AU-6(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-6(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-6(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-6(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-6(6)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-6(10)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-7": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-7(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-8": {
+    "control_text": "tolerance for relationship between time stamps of individual records in the audit trail]",
+    "defined_value": "granularity in AU-8. In accordance with tolerance defined in AU-8.",
+    "selected": true
+  },
+  "AU-8(1)": {
+    "control_text": "(a) [Assignment: organization-defined frequency] [Assignment: organization-defined authoritative time source] (b) [Assignment: organization-defined time period]",
+    "defined_value": "(a) At least every 24 hours. (a) Not appropriate to define at the CNSS level for all NSS. (b) Greater than the organizationally defined",
+    "selected": true
+  },
+  "AU-9": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-9(2)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "a. At least weekly.",
+    "selected": true
+  },
+  "AU-9(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-9(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-9(5)": {
+    "control_text": "[Selection (one or more): movement; deletion] [Assignment: organization-defined audit information]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. Any security related audit information.",
+    "selected": false
+  },
+  "AU-10": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-11": {
+    "control_text": "[Assignment: organization-defined time period consistent with records retention policy]",
+    "defined_value": "A minimum of 5 years for Sensitive Compartmented Information and Sources And Methods Intelligence information AND A minimum of 1 year for all other information (Unclassified through Collateral Top Secret).",
+    "selected": true
+  },
+  "AU-11(1)": {
+    "control_text": "[Assignment: organization-defined measures]",
+    "defined_value": "A retention of technology to access audit records for the duration of the required retention period.",
+    "selected": true
+  },
+  "AU-12": {
+    "control_text": "a. [Assignment: organization-defined information system components] b. Assignment: organization-defined personnel or roles]",
+    "defined_value": "a. All information systems and network components. b. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "AU-12(1)": {
+    "control_text": "[Assignment: organization-defined information system components] [Assignment: organization-defined level of",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "AU-12(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-13(2)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "At least annually if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "AU-14": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-14(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-14(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "AU-14(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CA-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "CA-2": {
+    "control_text": "b. [Assignment: organization-defined frequency] d. [Assignment: organization-defined individuals or roles]",
+    "defined_value": "b. At least annually, or as stipulated in the organization's continuous monitoring program. d. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "CA-2(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CA-2(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CA-3": {
+    "control_text": "c. [Assignment: organization-defined frequency]",
+    "defined_value": "c. At least annually.",
+    "selected": true
+  },
+  "CA-3(1)": {
+    "control_text": "[Assignment: organization-defined unclassified, national security system] [Assignment: organization-defined boundary protection device]",
+    "defined_value": "All unclassified NSS. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "CA-3(5)": {
+    "control_text": "[Selection: allow-all, deny-by-exception; deny- all, permit-by-exception] [Assignment: organization-defined information systems] to connect to external information systems.",
+    "defined_value": "Deny-all, permit-by-exception. All systems.",
+    "selected": true
+  },
+  "CA-5": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "b. At least quarterly.",
+    "selected": true
+  },
+  "CA-6": {
+    "control_text": "c. [Assignment: organization-defined frequency]",
+    "defined_value": "c.  If the organization and/or system is adequately covered by a continuous monitoring program the Security Authorization may be continuously updated: If not; at least every three (3) years, when significant security breaches occur, whenever there is a significant change to the system, or to the environment in which the system operates.",
+    "selected": true
+  },
+  "CA-7": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CA-7(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CA-8": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CA-9": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all NSS. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "CM-2": {
+    "control_text": "g. [Assignment: organization-defined configuration change control element (e.g., committee, board] [Selection (one or more): [Assignment: organization-defined frequency] [Assignment: organization-defined configuration change conditions]]",
+    "defined_value": "configurations as defined in CM-2 (3), whichever is longer. g. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "CM-2(1)": {
+    "control_text": "(a) [Assignment: organization-defined frequency] (b) [Assignment organization-defined circumstances]",
+    "defined_value": "(a) At least annually. (b) Significant or security relevant changes or security incidents occur.",
+    "selected": true
+  },
+  "CM-2(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-2(3)": {
+    "control_text": "[Assignment: organization-defined previous versions of baseline configurations of the information system]",
+    "defined_value": "At least two.",
+    "selected": true
+  },
+  "CM-2(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-3": {
+    "control_text": "e. [Assignment: organization-defined time period]",
+    "defined_value": "e. 1 year or two change cycles of baseline defined in CM-3 g. Supplemental guidance: The information security representative shall be a voting member.",
+    "selected": true
+  },
+  "CM-3(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-3(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-3(4)": {
+    "control_text": "[Assignment: organization-defined configuration change control element]",
+    "defined_value": "The configuration change control element",
+    "selected": true
+  },
+  "CM-3(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-3(6)": {
+    "control_text": "[Assignment: organization-defined security safeguards]",
+    "defined_value": "All security safeguards that rely on cryptography",
+    "selected": true
+  },
+  "CM-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-4(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-5(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-5(2)": {
+    "control_text": "[Assignment: organization-defined frequency] [Assignment: organization-defined circumstances]",
+    "defined_value": "Every 90 days or more frequently as the organization defines for high integrity systems AND at least annually or more frequently as the organization defines for low integrity and moderate integrity systems. When there is an incident or when planned changes have been performed.",
+    "selected": true
+  },
+  "CM-5(3)": {
+    "control_text": "[Assignment: organization-defined software and firmware components]",
+    "defined_value": "All digitally signed software and firmware products.",
+    "selected": true
+  },
+  "CM-5(5)": {
+    "control_text": "(b) [Assignment: organization-defined frequency]",
+    "defined_value": "(b) At least annually.",
+    "selected": true
+  },
+  "CM-5(6)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-6": {
+    "control_text": "a. [Assignment: organization-defined security configuration checklists] c. [Assignment: organization-defined information system components] [Assignment: organization-defined operational requirements]",
+    "defined_value": "a. Organizationally approved guides such as DoD SRGs, STIGs, or NSA SCGs; if such a reference document is not available, the following are acceptable in descending order as available: (1) Commercially accepted practices (e.g., SANS) (2) Independent testing results (e.g., ICSA) or (3) Vendor literature. c. All configurable information system components. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "CM-6(1)": {
+    "control_text": "[Assignment: organization-defined information system components]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS but minimally for all IA enabled or related components.",
+    "selected": true
+  },
+  "CM-6(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-7": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-7(1)": {
+    "control_text": "(a) [Assignment: organization-defined frequency] (b) [Assignment: organization-defined functions, ports, protocols, and services within the information system deemed to be unnecessary and/or nonsecure]",
+    "defined_value": "(a) At least annually or as system changes or incidents occur. (b) All functions, ports, protocols, and services within the information system deemed to be unnecessary and/or nonsecure.",
+    "selected": true
+  },
+  "CM-7(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-7(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-7(4)": {
+    "control_text": "(a) [Assignment: organization-defined software programs not authorized to execute on the information system] (c) [Assignment: organization-defined frequency]",
+    "defined_value": "(a) Not appropriate to define at the CNSS level for all NSS. (c) At least annually.",
+    "selected": false
+  },
+  "CM-7(5)": {
+    "control_text": "(a) [Assignment: organization-defined software programs authorized to execute on the information system] (c) [Assignment: organization-defined frequency]",
+    "defined_value": "(a) Not appropriate to define at the CNSS level for all NSS. (c) At least annually.",
+    "selected": true
+  },
+  "CM-8": {
+    "control_text": "a.4. [Assignment: organization-defined information deemed necessary to achieve effective information system component accountability] b. [Assignment: organization-defined frequency]",
+    "defined_value": "a.4. Minimally but not limited to: hardware specifications (manufacturer, type, model, serial number, physical location), software and software license information, information system/component owner, and for a networked component/device, the machine name. b. At least annually.",
+    "selected": true
+  },
+  "CM-8(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-8(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-8(3)": {
+    "control_text": "(a) [Assignment: organization-defined frequency] (b) [Selection (one or more): disables network access by such components; isolates the components; notifies [Assignment: organization-defined personnel or roles]]",
+    "defined_value": "(a) Continuously. (b) Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "CM-8(4)": {
+    "control_text": "[Selection (one or more): name; position; role]",
+    "defined_value": "Minimally position or role.",
+    "selected": true
+  },
+  "CM-8(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-8(9)": {
+    "control_text": "(a) [Assignment: organization-defined acquired information system components]",
+    "defined_value": "All acquired information system components. See supplemental guidance. Supplemental guidance: this is part of Security Authorization, \"authorization boundary\".",
+    "selected": false
+  },
+  "CM-9": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-10": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-10(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-11": {
+    "control_text": "a. [Assignment: organization-defined policies] b. [Assignment: organization-defined methods] c. [Assignment: organization-defined frequency]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all NSS. b. Not appropriate to define at the CNSS level for all NSS. c. Continuously.",
+    "selected": true
+  },
+  "CM-11(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CM-11(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all NSS. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "CP-2": {
+    "control_text": "a.6. [Assignment: organization-defined personnel or roles] b. [Assignment: organization-defined key contingency personnel (identified by name and/or by role) and organizational elements] d. [Assignment: organization-defined frequency] f. [Assignment: organization-defined key contingency personnel (identified by name and/or by role) and organizational elements]",
+    "defined_value": "a.6. Not appropriate to define at the CNSS level for all NSS. b. Key personnel or roles and organizational elements identified in the contingency plan. d. At least annually unless otherwise defined in organizational policy. f. Key personnel and .organizational elements identified in the contingency plan.",
+    "selected": true
+  },
+  "CP-2(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-2(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-2(3)": {
+    "control_text": "[Assignment: organization-defined time period]",
+    "defined_value": "A time period as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-2(4)": {
+    "control_text": "[Assignment: organization-defined time period]",
+    "defined_value": "A time period as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-2(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-2(8)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-3": {
+    "control_text": "a. [Assignment: organization-defined time period] c. [Assignment: organization-defined frequency]",
+    "defined_value": "a. 10 working days . c. Annually or as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-3(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-4": {
+    "control_text": "a. [Assignment: organization-defined frequency] [Assignment: organization-defined tests]",
+    "defined_value": "a. At a frequency as defined in the contingency plan. Tests as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-4(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-4(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-6": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-6(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-6(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-6(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-7": {
+    "control_text": "a. [Assignment: organization-defined information system operations] [Assignment: organization-defined time period consistent with recovery time and recovery point objectives]",
+    "defined_value": "a. Information system operations as defined in the contingency plan. A time period as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-7(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-7(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-7(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-7(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-8": {
+    "control_text": "[Assignment: organization-defined information system operations] [Assignment: organization-defined time period]",
+    "defined_value": "Information system operations as defined in the contingency plan. A time period as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-8(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-8(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-8(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-8(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-8(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-9": {
+    "control_text": "a. [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives] b. [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives] c. [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]",
+    "defined_value": "a. At least weekly or as defined in the contingency plan. b. At least weekly or as defined in the contingency plan. c. When created, received, updated, or as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-9(1)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "At least monthly or as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-9(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-9(3)": {
+    "control_text": "[Assignment: organization-defined critical information system software and other security- related information]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS but as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-9(5)": {
+    "control_text": "[Assignment: organization-defined time period and transfer rate consistent with the recovery time and recovery point objectives]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS but as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-9(7)": {
+    "control_text": "[Assignment: organization-defined backup information]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS, but as defined in the contingency plan.",
+    "selected": false
+  },
+  "CP-10": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-10(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "CP-10(4)": {
+    "control_text": "[Assignment: organization-defined restoration time-periods]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS but as defined in the contingency plan.",
+    "selected": true
+  },
+  "CP-11": {
+    "control_text": "[Assignment: organization-defined alternative communications protocols]",
+    "defined_value": "Alternate communications protocols as defined in the contingency plan.",
+    "selected": false
+  },
+  "DI-1": {
+    "control_text": "c. [Assignment: organization-defined frequency]",
+    "defined_value": "At least every 180 days if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "DI-1(2)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "At least every 180 days if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "DM-1": {
+    "control_text": "c. [Assignment: organization-defined frequency, at least annually]",
+    "defined_value": "c. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "DM-2": {
+    "control_text": "a. [Assignment: organization-defined time period] c. [Assignment: organization-defined techniques or methods]",
+    "defined_value": "a. In accordance with National Archives and Records Administration (NARA). c. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": false
+  },
+  "IA-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. Identification and authentication policy [Assignment: organization-defined frequency]; and b.2. Identification and authentication procedures [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "IA-2": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(8)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(9)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(11)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-2(12)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-3(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-4": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] d.[Assignment: organization-defined time period] e. [Assignment: organization-defined time period of inactivity]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all NSS. d. At least a year for individuals, groups, roles ...Not appropriate to define for device identifiers (e.g., media access control (MAC), Internet protocol (IP) addresses, or device-unique token identifiers.\" e. Not to exceed 35 days for individuals, groups, roles. Not appropriate to define for device identifiers (e.g., media access control (MAC), Internet protocol (IP) addresses, or device-unique token identifiers.\"",
+    "selected": true
+  },
+  "IA-4(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-5": {
+    "control_text": "g. [Assignment: organization-defined time period by authenticator type]",
+    "defined_value": "g. Not to exceed 180 days for passwords; ...Not appropriate to define at the CNSS level for all NSS using other authenticator types. Requirements as defined in IA-5 (1).",
+    "selected": true
+  },
+  "IA-5(1)": {
+    "control_text": "(a) [Assignment: organization-defined requirements for case sensitivity, number of characters, mix of upper-case letters, lower-case letters, numbers, and special characters, including minimum requirements for each type] (b) [Assignment: organization-defined number] (d) [Assignment: organization-defined numbers for lifetime minimum, lifetime maximum] (e) [Assignment: organization-defined number]",
+    "defined_value": "(a) A case sensitive 12-character mix of upper case letters, lower case letters, numbers and special characters in including at least one of each. (b) 50% of the characters. d) 24 hours minimum and 180 days maximum. (e) Minimum of 10; (does not apply to one time use passwords).",
+    "selected": true
+  },
+  "IA-5(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-5(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-5(4)": {
+    "control_text": "[Assignment: organization-defined requirements]",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-5(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-5(8)": {
+    "control_text": "[Assignment: organization-defined security safeguards]",
+    "defined_value": "Precautions including advising users that they must not use the same password for any of the following: Domains of differing classification levels; More than one domain of a classification level (e.g., internal agency network and Intelink).; More than one privilege level (e.g., user, administrator).",
+    "selected": true
+  },
+  "IA-5(11)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-5(13)": {
+    "control_text": "[Assignment: organization-defined time period].",
+    "defined_value": "1 hour.",
+    "selected": true
+  },
+  "IA-5(14)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-6": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-7": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-8": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-8(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-8(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-8(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-8(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-10": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IA-11": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IP-4(1)": {
+    "control_text": "[Assignment: organization-defined time period]",
+    "defined_value": "2 business days.",
+    "selected": false
+  },
+  "IR-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all NSS. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "IR-2": {
+    "control_text": "a. [Assignment: organization-defined time period] c. [Assignment: organization-defined frequency]",
+    "defined_value": "a. 30 working days. c. At least annually.",
+    "selected": true
+  },
+  "IR-2(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-2(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-3": {
+    "control_text": "[Assignment: organization-defined frequency] [Assignment: organization-defined tests]",
+    "defined_value": "At least annually. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "IR-3(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-4(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-4(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-4(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-4(6)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-4(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-4(8)": {
+    "control_text": "[Assignment: organization-defined external organizations] [Assignment: organization-defined incident information]",
+    "defined_value": "The appropriate CIRT/CERT (such as US- CERT, DoD CERT, IC CERT) Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "IR-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-5(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-6": {
+    "control_text": "a. [Assignment: organization-defined time period] b. [Assignment: organization-defined authorities]",
+    "defined_value": "a. 2 hours if not otherwise defined in formal organizational policy. b. The appropriate Agency CIRT/CERT (see IR- 4(8)).",
+    "selected": true
+  },
+  "IR-6(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-6(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-7": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-7(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-7(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-8": {
+    "control_text": "a.8. [Assignment: organization-defined personnel or roles] b. [Assignment: organization-defined incident response personnel (identified by name and/or by role) and organizational elements] c. [Assignment: organization-defined frequency] e. [Assignment: organization-defined incident response personnel (identified by name and/or by role) and organizational elements]",
+    "defined_value": "a.8. CISO/SISO if not otherwise defined in formal organizational policy. b. All personnel with a role or responsibility for implementing the incident response plan. c. At least annually (incorporating lessons learned from past incidents). e. All personnel with a role or responsibility for implementing the incident response plan.",
+    "selected": true
+  },
+  "IR-9": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-9(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-9(2)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "Annually.",
+    "selected": true
+  },
+  "IR-9(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-9(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "IR-10": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] 2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "MA-2": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-2(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-3(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-3(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-3(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-4(1)": {
+    "control_text": "(a) [Assignment: organization-defined audit events]",
+    "defined_value": "(a) As defined in the organizations formal audit",
+    "selected": true
+  },
+  "MA-4(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-4(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-4(6)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-4(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-5(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MA-6": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b. 1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "MP-2": {
+    "control_text": "[Assignment: organization-defined types of digital and/or non-digital media] [Assignment: organization-defined personnel or roles].",
+    "defined_value": "All types of digital and/or non-digital media containing information not cleared for public release. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "MP-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-5(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-6": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-6(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-6(2)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "MP-6(3)": {
+    "control_text": "[Assignment: organization-defined circumstances requiring sanitization of portable storage devices]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS, however the use of nondestructive sanitization techniques are for the elimination of malicious code, not removal of approved information or software.",
+    "selected": true
+  },
+  "MP-7": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-7(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "MP-8(2)": {
+    "control_text": "[Assignment: organization-defined tests] [Assignment: organization-defined frequency]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "PE-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b. 1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "PE-2": {
+    "control_text": "c. [Assignment: organization-defined frequency]",
+    "defined_value": "c. At least annually.",
+    "selected": true
+  },
+  "PE-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-3(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-6": {
+    "control_text": "b. [Assignment: organization-defined frequency] [Assignment: organization-defined events or potential indications of events]",
+    "defined_value": "b. At least every 90 days if not otherwise defined in formal organizational policy. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "PE-6(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-6(3)": {
+    "control_text": "[Assignment: organization-defined operational areas] [Assignment: organization-defined time period]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. At least 90 days if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "PE-6(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-8": {
+    "control_text": "a. [Assignment: organization-defined time period] b. [Assignment: organization-defined frequency]",
+    "defined_value": "a. At least one year. b. At least every 90 days if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "PE-8(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-9": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-10": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-11": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-11(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-12": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-13": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-13(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-13(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-13(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-13(4)": {
+    "control_text": "[Assignment: organization-defined frequency] [Assignment: organization-defined time period]",
+    "defined_value": "At least annually if not otherwise defined in formal organizational policy. 60 days.",
+    "selected": true
+  },
+  "PE-14": {
+    "control_text": "a. [Assignment: organization-defined acceptable levels] b. [Assignment: organization-defined frequency]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all NSS. b. continuously.",
+    "selected": true
+  },
+  "PE-15": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-15(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-16": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-17": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PE-18": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PL-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "PL-2": {
+    "control_text": "b. [Assignment: organization-defined personnel or roles] c. [Assignment: organization-defined frequency]",
+    "defined_value": "b. Not appropriate to define at the CNSS level for all NSS. c. At least annually or when required due to system changes or modifications.",
+    "selected": true
+  },
+  "PL-2(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PL-4": {
+    "control_text": "c. [Assignment: organization-defined frequency]",
+    "defined_value": "c. At least annually if not otherwise defined in formal organizational  policy.",
+    "selected": true
+  },
+  "PL-4(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PL-7": {
+    "control_text": "b. [Assignment: organization-defined frequency]",
+    "defined_value": "b. At least annually  or when changes to the information system or its environment warrant.",
+    "selected": false
+  },
+  "PL-8": {
+    "control_text": "b. [Assignment: organization-defined frequency]",
+    "defined_value": "b. At least annually or when changes to the information system or its environment warrant.",
+    "selected": true
+  },
+  "PL-8(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PL-8(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PM-1": {
+    "control_text": "b. [Assignment: organization-defined frequency]",
+    "defined_value": "b. At least annually if not otherwise defined informal organizational policy.",
+    "selected": false
+  },
+  "PM-9": {
+    "control_text": "c. [Assignment: organization-defined frequency] NIST SP 800-53 Rev4, Appendix J, Privacy Control Catalog",
+    "defined_value": "c. At least annually if not otherwise defined informal organizational policy.",
+    "selected": false
+  },
+  "PS-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "PS-2": {
+    "control_text": "c. [Assignment: organization-defined frequency]",
+    "defined_value": "c. At least annually or when the position description is updated or when the position is vacated.",
+    "selected": true
+  },
+  "PS-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PS-4": {
+    "control_text": "a. [Assignment: organization-defined time period] c. [Assignment: organization-defined information security topics] f. [Assignment: organization-defined personnel or roles] [Assignment: organization-defined time period]",
+    "defined_value": "a. If voluntary: As soon as possible, not to exceed 5 working days. If involuntary: Within same day as termination. c. Not appropriate to define at the CNSS level for all NSS. f. Not appropriate to define at the CNSS level for all NSS. As soon as possible, not to exceed 1 working day.",
+    "selected": true
+  },
+  "PS-4(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PS-4(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PS-5": {
+    "control_text": "b. [Assignment: organization-defined transfer or reassignment actions] [Assignment: organization-defined time period following the formal transfer action] d. [Assignment: organization-defined personnel or roles] [Assignment: organization-defined time period]",
+    "defined_value": "b. Reassignment actions to ensure all system access no longer required (need to know) are removed or disabled. b. 10 working days if not otherwise defined in formal organizational policy. d. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "PS-6": {
+    "control_text": "b. [Assignment: organization-defined frequency] c.2. [Assignment: organization-defined frequency]",
+    "defined_value": "b. At least annually if not otherwise defined in formal organizational policy . c.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "PS-6(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "PS-7": {
+    "control_text": "d. [Assignment: organization-defined personnel or roles] [Assignment: organization-defined time period]",
+    "defined_value": "d. Organizational Security Manager. As soon as possible, not to exceed 1 working day.",
+    "selected": true
+  },
+  "PS-8": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "RA-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "RA-2": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "RA-3": {
+    "control_text": "b. [Selection: security plan; risk assessment report; [Assignment: organization-defined document]] c. [Assignment: organization-defined frequency] d. [Assignment: organization-defined personnel or roles] e. [Assignment: organization-defined frequency]",
+    "defined_value": "b. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. c. At least annually if not otherwise defined in formal organizational policy. d. Not appropriate to define at the CNSS level for all NSS. e. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "RA-5": {
+    "control_text": "a. [Assignment: organization-defined frequency and/or randomly in accordance with organization-defined process] d. [Assignment: organization-defined response times] e. [Assignment: organization-defined personnel or roles]",
+    "defined_value": "a. At least every 120 days. d. Not appropriate to define at the CNSS level for all NSS. e. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "RA-5(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "RA-5(2)": {
+    "control_text": "[Selection (one or more): [Assignment: organization-defined frequency]; prior to a new scan; when new vulnerabilities are identified and reported].",
+    "defined_value": "Within 24 hours prior to running scans.",
+    "selected": true
+  },
+  "RA-5(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "RA-5(5)": {
+    "control_text": "[Assignment: organization-identified information system components] [Assignment: organization-defined vulnerability scanning activities]",
+    "defined_value": "Authorized vulnerability scanning components. Authorization by the CISO/SISO or designate.",
+    "selected": true
+  },
+  "RA-5(10)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b. 1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "SA-2": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-4(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-4(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-4(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-4(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-4(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-4(9)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-4(10)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-8": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-9": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-9(1)": {
+    "control_text": "(b) [Assignment: organization-defined personnel or roles].",
+    "defined_value": "(b) Chief Information Officer.",
+    "selected": true
+  },
+  "SA-9(2)": {
+    "control_text": "[Assignment: organization-defined external information system services]",
+    "defined_value": "All external information systems and services.",
+    "selected": true
+  },
+  "SA-10": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-10(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-11": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-12": {
+    "control_text": "[Assignment: organization-defined security safeguards]",
+    "defined_value": "Security safeguards in accordance with CNSSD No. 505, Supply Chain Risk Management.",
+    "selected": true
+  },
+  "SA-12(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-12(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-12(8)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-12(9)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-14": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-15": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-15(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-15(4)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-15(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-15(9)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-16": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-17": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-19": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SA-22": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "SC-2": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-3": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-5": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-5(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-5(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-5(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(4)": {
+    "control_text": "(e) [Assignment: organization-defined frequency]",
+    "defined_value": "(e) At least every 180 days.",
+    "selected": true
+  },
+  "SC-7(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(8)": {
+    "control_text": "[Assignment: organization-defined internal communications traffic] [Assignment: organization-defined external networks]",
+    "defined_value": "All internal communications traffic that may be proxied, except traffic specifically exempted by the Authorizing Official or organizational policy. All untrusted networks outside the control of the organization.",
+    "selected": true
+  },
+  "SC-7(9)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(10)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(11)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(12)": {
+    "control_text": "[Assignment: organization-defined host-based boundary protection mechanisms] [Assignment: organization-defined information system components]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. All system components capable of supporting host-based boundary protection mechanisms such as but not limited to servers, workstations, and those subject to operation outside of the organizational boundary( i.e., laptops and other mobile devices).",
+    "selected": true
+  },
+  "SC-7(13)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(14)": {
+    "control_text": "[Assignment: organization-defined managed interfaces]",
+    "defined_value": "Any managed interface that crosses security domains or connects to an external network; such as but not limited to: cross domain solutions (SABI, TSABI), a network boundary with a WAN, a partner network, or the Internet.",
+    "selected": true
+  },
+  "SC-7(18)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-7(19)": {
+    "control_text": "[Assignment: organization-defined communication clients]",
+    "defined_value": "All.",
+    "selected": false
+  },
+  "SC-7(21)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-8(1)": {
+    "control_text": "[Selection (one or more): prevent unauthorized disclosure of information; detect changes to information] [Assignment: organization-defined alternative physical safeguards].",
+    "defined_value": "Prevent unauthorized disclosure of, and detect changes to, information. Alternative physical safeguards such as keeping transmission within physical areas rated IAW the sensitivity of the information or within a Protected Distribution System (PDS) when traversing areas not approved for the sensitivity of the information.",
+    "selected": false
+  },
+  "SC-8(2)": {
+    "control_text": "[Selection (one or more): confidentiality; integrity]",
+    "defined_value": "Confidentiality and integrity.",
+    "selected": false
+  },
+  "SC-10": {
+    "control_text": "[Assignment: organization-defined time period]",
+    "defined_value": "No more than one hour.",
+    "selected": true
+  },
+  "SC-11": {
+    "control_text": "[Assignment: organization-defined security functions to include at a minimum, information system authentication and re-authentication]",
+    "defined_value": "Information system authentication and re- authentication; functions other than the minimum required are not appropriate to define at the CNSS level for all NSS.",
+    "selected": false
+  },
+  "SC-12": {
+    "control_text": "[Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction]",
+    "defined_value": "For unclassified NSS, NIST FIPS-compliant; and/or for classified NSS, see the Classified Information Overlay; processes/requirements for key generation, distribution, storage, access, and destruction.",
+    "selected": true
+  },
+  "SC-12(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-12(2)": {
+    "control_text": "[Selection: NIST FIPS-compliant; NSA- approved]",
+    "defined_value": "NIST FIPS-compliant for unclassified data, and/or See Classified Information Overlay for classified data.",
+    "selected": false
+  },
+  "SC-13": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-15": {
+    "control_text": "a. [Assignment: organization-defined exceptions where remote activation is to be allowed]",
+    "defined_value": "Dedicated VTC suites located in approved VTC locations that are centrally managed.",
+    "selected": true
+  },
+  "SC-15(4)": {
+    "control_text": "[Assignment: organization-defined online meetings and teleconferences]",
+    "defined_value": "All VTC and all IP based online meetings and conferences (excludes audio only teleconferences using traditional telephony).",
+    "selected": false
+  },
+  "SC-17": {
+    "control_text": "[Assignment: organization-defined certificate policy]",
+    "defined_value": "The certificate policy defined in CNSSP No. 25.",
+    "selected": true
+  },
+  "SC-18": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-18(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-18(2)": {
+    "control_text": "[Assignment: organization-defined mobile code requirements]",
+    "defined_value": "The following requirements: (a) Emerging mobile code technologies that have not undergone a risk assessment and been assigned to a Risk Category by the CIO are not used. (b) Category 1 mobile code is signed with a code signing certificate; use of unsigned Category 1 mobile code is prohibited; use of Category 1 mobile code technologies that cannot block or disable unsigned mobile code (e.g., Windows Scripting Host) is prohibited. (c) Category 2 mobile code which executes in a constrained environment without access to system resources (e.g., Windows registry, file system, system parameters, and network connections to other than the originating host) may be used. (d) Category 2 mobile code that does not execute in a constrained environment may be used when obtained from a trusted source over an assured channel (e.g., SIPRNet, SSL connection, S/MIME, code is signed with an approved code signing certificate). (e) Category 3 (mobile code having limited functionality, with no capability for unmediated access to the services and resources of a computing platform) mobile code may be used.",
+    "selected": true
+  },
+  "SC-18(3)": {
+    "control_text": "[Assignment: organization-defined unacceptable mobile code]",
+    "defined_value": "All unacceptable mobile code such as: (a) Emerging mobile code technologies that have not undergone a risk assessment and been assigned to a Risk Category by the CIO. (b) unsigned Category 1 mobile code and Category 1 mobile code technologies that cannot block or disable unsigned mobile code (e.g., Windows Scripting Host). (d) Category 2 mobile code not obtained from a trusted source over an assured channel (e.g., SIPRNet, SSL connection, S/MIME, code is signed with an approved code signing certificate).",
+    "selected": true
+  },
+  "SC-18(4)": {
+    "control_text": "[Assignment: organization-defined software applications] [Assignment: organization-defined actions]",
+    "defined_value": "Software applications and such as but not limited to email, scriptable document/file editing applications that support documents with embedded code (e.g., MS Office applications/documents), etc. Prompting the user for permission.",
+    "selected": true
+  },
+  "SC-19": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-20": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-21": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-22": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-23": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-23(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-23(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-23(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-24": {
+    "control_text": "[Assignment: organization-defined known-state] [Assignment: organization-defined types of failures] [Assignment: organization-defined system state information]",
+    "defined_value": "Known secure state. All types of failures. Information necessary to determine cause of failure and to return to operations with least disruption to mission/business processes.",
+    "selected": true
+  },
+  "SC-28": {
+    "control_text": "[Selection (one or more): confidentiality; integrity] Assignment: organization-defined information at rest]",
+    "defined_value": "Confidentiality and integrity. All information not cleared for public release.",
+    "selected": true
+  },
+  "SC-28(1)": {
+    "control_text": "[Assignment: organization-defined information] [Assignment: organization-defined information system components]",
+    "defined_value": "All information not cleared for public release. System components outside of organization facilities.",
+    "selected": true
+  },
+  "SC-38": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-39": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SC-43": {
+    "control_text": "a. [Assignment: organization-defined information system components]",
+    "defined_value": "All information system components (through the use of an acceptable use agreement).",
+    "selected": false
+  },
+  "SE-1": {
+    "control_text": "a. [Assignment: organization-defined frequency] b. [Assignment: organization-defined frequency]",
+    "defined_value": "a. At least annually if not otherwise defined in formal organizational policy. b. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": false
+  },
+  "SI-1": {
+    "control_text": "a. [Assignment: organization-defined personnel or roles] b.1. [Assignment: organization-defined frequency] b.2. [Assignment: organization-defined frequency]",
+    "defined_value": "a. All personnel. b.1. At least annually if not otherwise defined in formal organizational policy. b.2. At least annually if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "SI-2": {
+    "control_text": "c. [Assignment: organization-defined time period]",
+    "defined_value": "c. 30 days if not otherwise defined in formal organizational policy.",
+    "selected": true
+  },
+  "SI-2(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-2(2)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "At least once a quarter.",
+    "selected": true
+  },
+  "SI-2(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-2(6)": {
+    "control_text": "[Assignment: organization-defined software and firmware components]",
+    "defined_value": "All upgraded/replaced software and firmware components that are no longer required for operation when possible.",
+    "selected": true
+  },
+  "SI-3": {
+    "control_text": "c.1. [Assignment: organization-defined frequency] [Selection (one or more); endpoint; network entry/exit points] 2. [Selection (one or more): block malicious code; quarantine malicious code; send alert to administrator; [Assignment: organization-defined action]]",
+    "defined_value": "c.1. At least weekly. Endpoints and network entry/exit points. c2. Block and quarantine malicious code then send an alert to the system administrator. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "SI-3(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-3(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-3(8)": {
+    "control_text": "[Assignment: organization-defined unauthorized operating system commands] [Assignment: organization-defined information system hardware components] [Selection (one or more): issues a warning; audits the command execution; prevents the execution of the command]",
+    "defined_value": "Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. Audits the command execution and prevents the execution of the command.",
+    "selected": false
+  },
+  "SI-3(10)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(4)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "Continuously.",
+    "selected": true
+  },
+  "SI-4(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(9)": {
+    "control_text": "[Assignment: organization-defined frequency]",
+    "defined_value": "At least monthly.",
+    "selected": false
+  },
+  "SI-4(10)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(11)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(12)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(14)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(15)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(16)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(19)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(20)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(22)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-4(23)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-5": {
+    "control_text": "a. [Assignment: organization-defined external organizations] c. [Selection (one or more): [Assignment: organization-defined personnel or roles] [Assignment: organization-defined elements within the organization] [Assignment: organization-defined external organizations]]",
+    "defined_value": "a. Minimally the US-CERT. c. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "SI-5(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-6": {
+    "control_text": "a. [Assignment: organization-defined security functions] b. [Selection (one or more): [Assignment: organization-defined system transitional states]; upon command by user with appropriate privilege [Assignment: organization-defined frequency]]; c. [Assignment: organization-defined personnel or roles] d. [Selection (one or more): shuts the information system down; restarts the information system [Assignment: organization-defined alternative action(s)]",
+    "defined_value": "a. Not appropriate to define at the CNSS level for all NSS. b. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS. c. Minimally notifies system/security administrator. d. Not appropriate to define at the CNSS level for all NSS. Not appropriate to define at the CNSS level for all NSS.",
+    "selected": true
+  },
+  "SI-6(3)": {
+    "control_text": "[Assignment: organization-defined personnel or roles].",
+    "defined_value": "Responsible security personnel (e.g., AO, SISO, ISSO, ISSM, etc.).",
+    "selected": true
+  },
+  "SI-7": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-7(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-7(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-7(5)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-7(7)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-7(8)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-7(9)": {
+    "control_text": "[Assignment: organization-defined devices]",
+    "defined_value": "All devices capable of verification of the boot process.",
+    "selected": false
+  },
+  "SI-7(13)": {
+    "control_text": "[Assignment: organization-defined personnel or roles]",
+    "defined_value": "Authorizing Official.",
+    "selected": false
+  },
+  "SI-7(14)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-7(15)": {
+    "control_text": "[Assignment: organization-defined software or firmware components]",
+    "defined_value": "All software and firmware from vendors/sources that provide cryptographic mechanisms to enable the validation of code authenticity and integrity.",
+    "selected": false
+  },
+  "SI-8": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-8(1)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-8(2)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-10": {
+    "control_text": "[Assignment: organization-defined information inputs]",
+    "defined_value": "All inputs to web/application servers, database servers, and any system or application input that might receive a crafted exploit toward executing some code or buffer overflow.",
+    "selected": true
+  },
+  "SI-10(3)": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-11": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-12": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  },
+  "SI-16": {
+    "control_text": "",
+    "defined_value": "",
+    "selected": true
+  }
+}

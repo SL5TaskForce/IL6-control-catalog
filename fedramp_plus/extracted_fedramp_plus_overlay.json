@@ -1,0 +1,110 @@
+{
+  "AC-7": {
+    "parameter_values": "For privileged users, DOD required an account lock after three unsuccessful attempts for Impact Levels 2/4/5 and after five unsuccessful attempts for accounts using a SIPR token. All levels must be configured to require an administrator unlock the account. For nonprivileged users, if rate limiting, DOD will allow 10 attempts with the account automatically unlocked after 30 minutes. If rate limiting is not used, normal DSPAV will be required.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "AU-5(1)": {
+    "parameter_values": "CSP/CSO may use FedRAMP value.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "CM-7(5)": {
+    "parameter_values": "DSPAV must be used.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "IA-5(1)": {
+    "parameter_values": "DSPAV must be used.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "PE-15": {
+    "parameter_values": "DSPAV must be used.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "PS-3(4)": {
+    "parameter_values": "All information systems. Users: U.S. citizens, U.S. nationals, or U.S. persons, foreign personnel as allowed by current DOD polices with AO approval. Administrators: U.S. citizens, U.S. nationals, or U.S. persons. Refer to Section 5.5.2, CSP Personnel Requirements, for more information.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "MA-5(2)": {
+    "parameter_values": "",
+    "impact_levels": ["IL6"]
+  },
+  "MA-5(3)": {
+    "parameter_values": "",
+    "impact_levels": ["IL6"]
+  },
+  "MA-5(4)": {
+    "parameter_values": "",
+    "impact_levels": ["IL6"]
+  },
+  "MA-5(5)": {
+    "parameter_values": "",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "MA-6": {
+    "parameter_values": "CSP/CSO may use FedRAMP value.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "PS-4": {
+    "parameter_values": "CSP/CSO may use FedRAMP value.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SA-4(5)": {
+    "parameter_values": "DSPAV must be used.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SA-9(1)": {
+    "parameter_values": "DSPAV must be used.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SA-9(3)": {
+    "parameter_values": "DSPAV must be used.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SA-9(5)": {
+    "parameter_values": "SA-9 (5)-1 [information processing, information or data, AND system services]. SA-9 (5)-2 [U.S./U.S. Territories or geographic locations where there is U.S. jurisdiction]. SA-9 (5)-3 [all data, systems, or services].",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SA-9(6)": {
+    "parameter_values": "",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SA-9(7)": {
+    "parameter_values": "",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SA-9(8)": {
+    "parameter_values": "",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SC-12(6)": {
+    "parameter_values": "",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SC-17": {
+    "parameter_values": "DODI 8520.02, Public Key Infrastructure (PKI) and Public Key Enabling (PKE).",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SC-18": {
+    "parameter_values": "",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SC-18(2)": {
+    "parameter_values": "DSPAV must be used.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SC-18(3)": {
+    "parameter_values": "Supplemental guidance: For the protection of the infrastructure supporting a CSO, CSPs are required to apply this control to their organizational IT systems and the infrastructure supporting their CSO(s). For the protection of Mission Owners, their end users, and networks, CSP CSOs must not support the downloading of mobile code, which is deemed unacceptable to DOD. Refer to Section 5.11, Mobile Code, for more information.",
+    "impact_levels": ["IL5", "IL6"]
+  },
+  "SC-18(4)": {
+    "parameter_values": "Software applications such as but not limited to email, scriptable document/file editing applications that support documents with embedded code (e.g., Microsoft Office applications/documents), etc. Prompting the user for permission.",
+    "impact_levels": ["IL5", "IL6"]
+  },
+  "SC-24": {
+    "parameter_values": "DSPAV must be used.",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  },
+  "SC-46": {
+    "parameter_values": "DSPAV must be used. If CDS is used",
+    "impact_levels": ["IL4", "IL5", "IL6"]
+  }
+}

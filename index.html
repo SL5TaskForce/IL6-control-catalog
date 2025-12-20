@@ -1,0 +1,1732 @@
+<!--
+  IL6 Control Catalog Web App
+  - Interactive explorer for IL6 security control overlays (FedRAMP High, CNSSI 1253, Classified Info, FedRAMP+)
+  - Features: search, family filter, overlay toggles, show/hide unselected controls, and more
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IL6 Control Catalog | SL5 Task Force</title>
+    <meta name="description" content="Interactive explorer for IL6 security control overlays including FedRAMP High, CNSSI 1253, Classified Information Overlay, and FedRAMP+. Based on NIST SP 800-53 controls for DoD cloud compliance.">
+    <meta name="keywords" content="IL6, Information Level 6, NIST SP 800-53, FedRAMP, CNSSI 1253, DoD, security controls, classified information, cloud security, SL5 Task Force">
+    <meta name="author" content="SL5 Task Force">
+    <meta property="og:title" content="IL6 Control Catalog | SL5 Task Force">
+    <meta property="og:description" content="Interactive explorer for IL6 security control overlays. Browse NIST SP 800-53 controls with FedRAMP High, CNSSI 1253, Classified Information, and FedRAMP+ overlays.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://il6.sl5taskforce.org/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="IL6 Control Catalog | SL5 Task Force">
+    <meta name="twitter:description" content="Interactive explorer for IL6 security control overlays based on NIST SP 800-53 for DoD cloud compliance.">
+    <link rel="canonical" href="https://il6.sl5taskforce.org/">
+    <style>
+        /* --------------------
+           Global Styles
+        --------------------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background-color: #f8f9fa;
+            padding-bottom: 100vh;
+        }
+
+        /* --------------------
+           Header
+        --------------------- */
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        /* --------------------
+           Main Container
+        --------------------- */
+        .controls-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* --------------------
+           About Section
+        --------------------- */
+        .intro-section {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .intro-header {
+            background: #f8fafc;
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .intro-title {
+            font-weight: 600;
+            color: #374151;
+            font-size: 1rem;
+        }
+
+        .intro-content {
+            padding: 1.5rem;
+            line-height: 1.6;
+            color: #4b5563;
+            text-align: left;
+        }
+
+        /* --------------------
+           Overlay Toggles Section
+        --------------------- */
+        .toggles-section {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+
+        .toggles-title {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .toggles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .toggle-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            background: #f9fafb;
+            transition: all 0.2s;
+        }
+
+        .toggle-item:hover {
+            background: #f3f4f6;
+            border-color: #d1d5db;
+        }
+
+        .toggle-label {
+            font-weight: 500;
+            color: #374151;
+            font-size: 0.9rem;
+        }
+
+        /* Add spacing for the Show Unselected toggle */
+        .toggle-label[style] {
+            padding-right: 0.75rem !important;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.3s;
+            border-radius: 24px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+
+        input:checked+.toggle-slider {
+            background-color: #3b82f6;
+        }
+
+        input:checked+.toggle-slider:before {
+            transform: translateX(26px);
+        }
+
+        /* --------------------
+           Search & Filter Bar
+        --------------------- */
+        .search-container {
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 300px;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .family-filter {
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            background: white;
+            min-width: 150px;
+        }
+
+        /* --------------------
+           Control Cards
+        --------------------- */
+        .control-card {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s;
+        }
+
+        .control-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Grayed out for unselected controls */
+        .control-card[style*="opacity: 0.6"] {
+            background-color: #f8f9fa !important;
+        }
+
+        .control-header {
+            background: #f8fafc;
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* SL5 highlight */
+        .control-header.sl5-style {
+            background: #fffde7;
+        }
+
+        .control-id {
+            font-weight: 700;
+            color: #1e40af;
+            font-size: 1.1rem;
+        }
+
+        .control-id-link {
+            font-weight: 700;
+            color: #1e40af;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .control-id-link:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        .control-name {
+            font-weight: 600;
+            color: #374151;
+            margin-left: 1rem;
+        }
+
+        .control-family {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .control-details {
+            padding: 1.5rem;
+            display: none;
+        }
+
+        .control-details.expanded {
+            display: block;
+        }
+
+        .control-text {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: #374151;
+            text-align: left;
+        }
+
+        .control-text div {
+            line-height: 1.6;
+            margin-bottom: 0.25em;
+        }
+
+        .control-discussion {
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: #4b5563;
+            text-align: left;
+        }
+
+        .control-open-questions {
+            margin-bottom: 1.5rem;
+        }
+
+        .discussion-title {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+
+        /* --------------------
+           Overlays
+        --------------------- */
+        .overlays-section {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #e5e7eb;
+        }
+
+        .overlays-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .overlay-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .overlay-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .overlay-name {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 1rem;
+        }
+
+        .overlay-badge {
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .overlay-fedramp {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .overlay-fedrampplus {
+            background: #f0f9ff;
+            color: #0c4a6e;
+        }
+
+        .overlay-insider {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .overlay-classified {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .overlay-cnssi {
+            background: #faf5ff;
+            color: #6b21a8;
+        }
+
+        .overlay-content {
+            line-height: 1.5;
+            color: #4b5563;
+            text-align: left;
+        }
+
+        .overlay-attributes {
+            margin-top: 1rem;
+        }
+
+        .overlay-attribute {
+            margin-bottom: 0.75rem;
+        }
+
+        .overlay-attribute-label {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+
+        .overlay-attribute-value {
+            color: #6b7280;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        /* --------------------
+           Enhancements
+        --------------------- */
+        .enhancement-count {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-left: 0.5rem;
+        }
+
+        .overlay-count {
+            background: #f3f4f6;
+            color: #6b7280;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .overlay-badges {
+            display: inline-flex;
+            gap: 0.25rem;
+            margin-left: 0.5rem;
+        }
+
+        .overlay-mini-badge {
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.2rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .withdrawn-badge {
+            background: #f3f4f6;
+            color: #6b7280;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 1px solid #d1d5db;
+            margin-left: 0.5rem;
+        }
+
+        .toggle-enhancements {
+            background: #f3f4f6;
+            border: 1px solid #d1d5db;
+            color: #374151;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-enhancements:hover {
+            background: #e5e7eb;
+            border-color: #9ca3af;
+        }
+
+        .enhancements-container {
+            border-top: 1px solid #e5e7eb;
+            margin-top: 0;
+        }
+
+        .enhancement-card {
+            background: #fafbfc;
+            border-left: 3px solid #e0e7ff;
+            margin: 0;
+        }
+
+        .enhancement-header {
+            background: #f8fafc;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+
+        /* SL5 highlight */
+        .enhancement-header.sl5-style {
+            background: #fffde7;
+        }
+
+        .enhancement-header:hover {
+            background: #f1f5f9;
+        }
+
+        .enhancement-id {
+            font-weight: 600;
+            color: #3730a3;
+            font-size: 0.95rem;
+        }
+
+        .enhancement-name {
+            font-weight: 500;
+            color: #4b5563;
+            margin-left: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .no-overlays {
+            text-align: left;
+            color: #9ca3af;
+            font-style: italic;
+            padding: 1rem;
+        }
+
+        .loading {
+            text-align: left;
+            padding: 2rem;
+            color: #6b7280;
+        }
+
+        .expand-icon {
+            transition: transform 0.2s;
+        }
+
+        .expand-icon.rotated {
+            transform: rotate(180deg);
+        }
+
+        /* --------------------
+           Modal
+        --------------------- */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(2px);
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 0.75rem;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            margin: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            animation: modalSlideIn 0.2s ease-out;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95) translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem 0.75rem 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            transition: background-color 0.2s;
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-control-info {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-control-id {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-control-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+
+        .modal-control-text {
+            line-height: 1.6;
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+
+        .modal-control-text div {
+            line-height: 1.6;
+            margin-bottom: 0.25em;
+        }
+
+        .modal-overlays {
+            margin-bottom: 1rem;
+        }
+
+        .modal-overlay-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-overlay-badge {
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 0.75rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .modal-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+            font-size: 0.9rem;
+        }
+
+        .modal-button-primary {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .modal-button-primary:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        .modal-button-secondary {
+            background: #f3f4f6;
+            color: #374151;
+            border: 1px solid #d1d5db;
+        }
+
+        .modal-button-secondary:hover {
+            background: #e5e7eb;
+        }
+
+        /* --------------------
+           Assessment Procedures
+        --------------------- */
+        .assessment-procedures {
+            margin-top: 1rem;
+        }
+
+        .assessment-procedure {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.25rem;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .procedure-id {
+            font-weight: 600;
+            color: #1e40af;
+            font-size: 0.9rem;
+        }
+
+        .procedure-objective {
+            margin-top: 0.5rem;
+            color: #4b5563;
+            line-height: 1.4;
+            text-align: left;
+        }
+
+        .procedure-method {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        /* --------------------
+           Related Controls
+        --------------------- */
+        .related-control-tag {
+            cursor: pointer;
+            color: #1e40af;
+        }
+
+        .related-control-tag:hover {
+            text-decoration: underline;
+        }
+
+        /* --------------------
+           Media Queries
+        --------------------- */
+        @media (max-width: 768px) {
+            .search-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-input {
+                min-width: auto;
+            }
+
+            .stats {
+                justify-content: center;
+            }
+
+            .control-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>IL6 Control Catalog</h1>
+        <p>Interactive website for exploring the overlays that constitute IL6, created by <a href="https://sl5.org" target="_blank" style="color: white; text-decoration: underline;">SL5 Task Force</a>.</p>
+    </div>
+    <div class="controls-container">
+        <!-- About Section -->
+        <div class="intro-section">
+            <div class="intro-header">
+                <div class="intro-title">About</div>
+            </div>
+            <div class="intro-content">
+                Information Level 6 (IL6) is the standard used by DoD for cloud service providers working with
+                classified secret information. IL6 is based on the NIST SP 800-53 control catalogue and is defined as
+                including FedRAMP High, CNSSI 1253, the Classified Information Overlay, and FedRAMP+. Where there is
+                disagreement, each of these takes precedence over the prior.
+            </div>
+        </div>
+        <!-- Search & Filter Bar -->
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput"
+                placeholder="Search controls by ID, name, or text...">
+            <div class="toggle-item" style="margin: 0;">
+                <span class="toggle-label" style="padding-right: 0.75rem;">Show Unselected</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="show-unselected-toggle" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            <select class="family-filter" id="familyFilter">
+                <option value="">All Families</option>
+            </select>
+        </div>
+        <!-- Controls List -->
+        <div id="controlsList" class="loading">
+            Loading NIST controls and overlays...
+        </div>
+    </div>
+    <!-- Main App Script -->
+    <script>
+        // --------------------
+        // Data Variables
+        // --------------------
+        let allControls = [];
+        let fedRampData = {};
+        let fedRampPlusData = {};
+        let classifiedData = {};
+        let cnssiData = {};
+
+        // --------------------
+        // Data Loading
+        // --------------------
+        async function loadData() {
+            try {
+                // Load NIST controls
+                const nistResponse = await fetch('nist_catalog/nist_sp_800-53_control_catalog.json');
+                const nistData = await nistResponse.json();
+                allControls = Object.values(nistData.controls || {});
+                // Ensure all controls have a family property
+                allControls.forEach(ctrl => {
+                    if (!ctrl.family) ctrl.family = "Unknown";
+                });
+                // Load overlays
+                const fedRampResponse = await fetch('fedramp_high/extracted_fedramp_high_overlay.json');
+                const fedRampText = await fedRampResponse.text();
+                const fedRampCleaned = fedRampText.replace(/: NaN,/g, ': null,').replace(/: NaN}/g, ': null}');
+                fedRampData = JSON.parse(fedRampCleaned);
+                const fedRampPlusResponse = await fetch('fedramp_plus/extracted_fedramp_plus_overlay.json');
+                fedRampPlusData = await fedRampPlusResponse.json();
+                const classifiedResponse = await fetch('classified_information/extracted_classified_information.json');
+                classifiedData = await classifiedResponse.json();
+                const cnssiResponse = await fetch('cnssi_1253/extracted_cnssi_1253.json');
+                cnssiData = await cnssiResponse.json();
+                // Populate filters and render
+                populateFamilyFilter();
+                renderControls();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('controlsList').innerHTML = '<div class="loading">Error loading data. Please check the console for details.</div>';
+            }
+        }
+
+        // --------------------
+        // Filter/Toggle Listeners
+        // --------------------
+        function attachSearchListeners() {
+            document.getElementById('searchInput').addEventListener('input', renderControls);
+            document.getElementById('familyFilter').addEventListener('change', renderControls);
+            document.getElementById('show-unselected-toggle').addEventListener('change', renderControls);
+        }
+
+        // --------------------
+        // Populate Family Filter
+        // --------------------
+        // Mapping of family abbreviations to full names
+        const FAMILY_NAMES = {
+            'AC': 'Access Control',
+            'AT': 'Awareness and Training',
+            'AU': 'Audit and Accountability',
+            'CA': 'Assessment, Authorization, and Monitoring',
+            'CM': 'Configuration Management',
+            'CP': 'Contingency Planning',
+            'IA': 'Identification and Authentication',
+            'IR': 'Incident Response',
+            'IS': 'Interface Security',
+            'MA': 'Maintenance',
+            'MP': 'Media Protection',
+            'NS': 'Network Separation',
+            'PE': 'Physical and Environmental Protection',
+            'PL': 'Planning',
+            'PM': 'Program Management',
+            'PS': 'Personnel Security',
+            'PT': 'PII Processing and Transparency',
+            'RA': 'Risk Assessment',
+            'SA': 'System and Services Acquisition',
+            'SC': 'System and Communications Protection',
+            'SI': 'System and Information Integrity',
+            'SR': 'Supply Chain Risk Management',
+            'ZT': 'Zero Trust',
+            'Unknown': 'Unknown'
+        };
+
+        function populateFamilyFilter() {
+            const families = [...new Set(allControls.map(control => control.family))].sort();
+            const familyFilter = document.getElementById('familyFilter');
+            // Clear previous options
+            familyFilter.innerHTML = '';
+            const defaultOption = document.createElement('option');
+            defaultOption.value = '';
+            defaultOption.textContent = 'All Families';
+            familyFilter.appendChild(defaultOption);
+            families.forEach(family => {
+                const option = document.createElement('option');
+                option.value = family;
+                // Show abbreviation and full name
+                const fullName = FAMILY_NAMES[family] || family;
+                option.textContent = `${family} - ${fullName}`;
+                familyFilter.appendChild(option);
+            });
+            // Attach event listeners after populating
+            attachSearchListeners();
+        }
+
+        // --------------------
+        // Helper Functions
+        // --------------------
+        function formatControlId(controlId) {
+            // Format control IDs with zero-padding for display
+            // e.g., "AC-1" -> "AC-01", "AC-10" -> "AC-10"
+            // Also handles enhancements: "AC-1(1)" -> "AC-01(01)"
+            return controlId.replace(/([A-Z]{2})-(\d+)(\((\d+)\))?/, (match, family, number, enhancement, enhNum) => {
+                const paddedNumber = number.padStart(2, '0');
+                if (enhancement) {
+                    const paddedEnhNum = enhNum.padStart(2, '0');
+                    return `${family}-${paddedNumber}(${paddedEnhNum})`;
+                }
+                return `${family}-${paddedNumber}`;
+            });
+        }
+
+        function formatControlText(text) {
+            if (!text) return '';
+
+            // Split by newlines and process each line
+            const lines = text.split('\n');
+            const formattedLines = lines.map(line => {
+                // Check for different indentation patterns
+                if (line.match(/^\([a-z]\)/)) {
+                    // Lines starting with (a), (b), etc. - deepest level
+                    return `<div style="margin-left: 3em;">${line}</div>`;
+                } else if (line.match(/^\d+\./)) {
+                    // Lines starting with 1., 2., etc. - middle level
+                    return `<div style="margin-left: 1.5em;">${line}</div>`;
+                } else if (line.match(/^[a-z]\./)) {
+                    // Lines starting with a., b., etc. - top level
+                    return `<div style="margin-top: 0.5em;">${line}</div>`;
+                } else if (line.trim() !== '') {
+                    // Other non-empty lines (continuation of previous line)
+                    return `<div style="margin-left: 1.5em;">${line}</div>`;
+                }
+                return '';
+            });
+
+            return formattedLines.join('');
+        }
+
+        // --------------------
+        // Main Render Function
+        // --------------------
+        function renderControls() {
+            const controlsList = document.getElementById('controlsList');
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const familyFilter = document.getElementById('familyFilter').value;
+            const showUnselected = document.getElementById('show-unselected-toggle').checked;
+            // Filter controls
+            let filteredControls = allControls.filter(control => {
+                const matchesSearch = !searchTerm ||
+                    control.id.toLowerCase().includes(searchTerm) ||
+                    control.name.toLowerCase().includes(searchTerm) ||
+                    (control.text && control.text.toLowerCase().includes(searchTerm)) ||
+                    (control.discussion && control.discussion.toLowerCase().includes(searchTerm));
+                const matchesFamily = !familyFilter || control.family === familyFilter;
+                // Check if control has overlays
+                const overlays = getOverlayInfo(control.id);
+                const hasOverlays = overlays.length > 0;
+                // If showUnselected is false, only show controls with overlays
+                const matchesOverlayFilter = showUnselected || hasOverlays;
+                return matchesSearch && matchesFamily && matchesOverlayFilter;
+            });
+
+            const groupedControls = groupControlsByParent(filteredControls);
+            const visibleCount = Object.keys(groupedControls).reduce((count, key) => {
+                const group = groupedControls[key];
+                return count + (group.parent ? 1 : 0) + group.enhancements.length;
+            }, 0);
+
+            if (visibleCount === 0) {
+                controlsList.innerHTML = '<div class="no-overlays">No controls match your search criteria.</div>';
+                return;
+            }
+
+            controlsList.innerHTML = '';
+
+            // Sort parent controls by ID
+            const sortedParentIds = Object.keys(groupedControls)
+                .filter(id => groupedControls[id].parent)
+                .sort((a, b) => {
+                    const aFamily = a.split('-')[0];
+                    const bFamily = b.split('-')[0];
+                    if (aFamily !== bFamily) return aFamily.localeCompare(bFamily);
+
+                    const aNum = parseInt(a.split('-')[1]) || 0;
+                    const bNum = parseInt(b.split('-')[1]) || 0;
+                    return aNum - bNum;
+                });
+
+            sortedParentIds.forEach(parentId => {
+                const group = groupedControls[parentId];
+                if (!group.parent) return;
+
+                const control = group.parent;
+                const enhancements = group.enhancements;
+
+                const controlCard = document.createElement('div');
+                controlCard.className = 'control-card';
+
+                const overlays = getOverlayInfo(control.id);
+                const hasEnhancements = enhancements.length > 0;
+                const nistUrl = getNistUrl(control.id);
+                const isWithdrawn = isControlWithdrawn(control);
+
+                // Apply grayed-out styling if no overlays are applied
+                if (overlays.length === 0) {
+                    controlCard.style.backgroundColor = '#f8f9fa';
+                    controlCard.style.opacity = '0.6';
+                }
+
+
+                controlCard.innerHTML = `
+                    <div class="control-header ${control.catalog === 'sl5' ? 'sl5-style' : ''}" onclick="toggleControl('${control.id}')">
+                        <div style="display: flex; align-items: center; flex: 1;">
+                            ${nistUrl ? `<a href="${nistUrl}" target="_blank" class="control-id-link" onclick="event.stopPropagation()">${formatControlId(control.id)}</a>` : `<span class="control-id">${formatControlId(control.id)}</span>`}
+                            ${isWithdrawn ? `<span class="withdrawn-badge">Withdrawn</span>` : ''}
+                            <span class="control-name">${control.name}</span>
+                            ${hasEnhancements ? `<span class="enhancement-count">(${enhancements.length} enhancement${enhancements.length > 1 ? 's' : ''})</span>` : ''}
+                            ${overlays.length > 0 ? `<span class="overlay-count">(${overlays.length} overlay${overlays.length > 1 ? 's' : ''})</span><span class="overlay-badges">${getOverlayBadgesHtml(overlays)}</span>` : ''}
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="control-family">${control.family}</span>
+                            ${hasEnhancements ? `<button class="toggle-enhancements" onclick="event.stopPropagation(); toggleEnhancements('${control.id}')" id="enh-btn-${control.id}">Show Enhancements</button>` : ''}
+                            <span class="expand-icon" id="icon-${control.id}">▼</span>
+                        </div>
+                    </div>
+                    <div class="control-details" id="details-${control.id}">
+                        <div class="control-text"><strong>Control Text:</strong><br>${formatControlText(control.text)}</div>
+                        ${control.discussion ? `
+                            <div class="control-discussion">
+                                <div class="discussion-title">Discussion:</div>
+                                ${control.discussion}
+                            </div>
+                        ` : ''}
+                        ${(() => {
+                        if (control.openQuestions) {
+                            if (Array.isArray(control.openQuestions) && control.openQuestions.length > 0) {
+                                return `
+                                        <div class="control-open-questions">
+                                            <div class="discussion-title">Open Questions:</div>
+                                            <div style="margin-left: 1.5em;">
+                                                ${control.openQuestions.map(q => `<div>${q}</div>`).join('')}
+                                            </div>
+                                        </div>
+                                    `;
+                            } else if (typeof control.openQuestions === 'string' && control.openQuestions.trim() !== '') {
+                                return `
+                                        <div class="control-open-questions">
+                                            <div class="discussion-title">Open Questions:</div>
+                                            <div style="margin-left: 1.5em;">
+                                                ${control.openQuestions}
+                                            </div>
+                                        </div>
+                                    `;
+                            }
+                        }
+                        return '';
+                    })()}
+                        ${control.relatedControls && control.relatedControls.length > 0 ? `
+                            <div class="related-controls">
+                                <h4>Related Controls:</h4>
+                                <div class="related-controls-list">
+                                    ${control.relatedControls.map(rc => `<span class="related-control-tag" onclick="showControlModal('${rc}')">${formatControlId(rc)}</span>`).join(' ')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        <div class="overlays-section">
+                            <h3 class="overlays-title">Overlays</h3>
+                            <div id="overlays-${control.id}">
+                                ${overlays.length === 0 ? '<div class="no-overlays">No overlays apply to this control.</div>' : ''}
+                            </div>
+                        </div>
+                    </div>
+                    ${hasEnhancements ? `
+                        <div class="enhancements-container" id="enhancements-${control.id}">
+                            ${enhancements.map(enh => renderEnhancement(enh, false)).join('')}
+                        </div>
+                    ` : ''}
+                `;
+
+                controlsList.appendChild(controlCard);
+
+                // Add overlays for parent control
+                if (overlays.length > 0) {
+                    const overlaysContainer = document.getElementById(`overlays-${control.id}`);
+                    overlays.forEach(overlay => {
+                        overlaysContainer.appendChild(renderOverlay(overlay));
+                    });
+                }
+
+                // Add overlays for enhancements
+                enhancements.forEach(enhancement => {
+                    const enhOverlays = getOverlayInfo(enhancement.id);
+                    if (enhOverlays.length > 0) {
+                        const enhancementId = enhancement.id.replace(/[()]/g, '_');
+                        setTimeout(() => {
+                            const enhOverlaysContainer = document.getElementById(`overlays-${enhancementId}`);
+                            if (enhOverlaysContainer) {
+                                enhOverlays.forEach(overlay => {
+                                    enhOverlaysContainer.appendChild(renderOverlay(overlay));
+                                });
+                            }
+                        }, 0);
+                    }
+                });
+            });
+        }
+
+        function toggleIntro() {
+            const content = document.getElementById('intro-content');
+            const icon = document.getElementById('intro-icon');
+
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                icon.classList.remove('rotated');
+            } else {
+                content.classList.add('expanded');
+                icon.classList.add('rotated');
+            }
+        }
+
+        function toggleControl(controlId) {
+            const details = document.getElementById(`details-${controlId}`);
+            const icon = document.getElementById(`icon-${controlId}`);
+
+            if (details && icon) {
+                if (details.classList.contains('expanded')) {
+                    details.classList.remove('expanded');
+                    icon.classList.remove('rotated');
+                } else {
+                    details.classList.add('expanded');
+                    icon.classList.add('rotated');
+                }
+            }
+        }
+
+        function toggleEnhancements(parentId) {
+            const enhancementsContainer = document.getElementById(`enhancements-${parentId}`);
+            const toggleButton = document.getElementById(`enh-btn-${parentId}`);
+
+            if (enhancementsContainer && toggleButton) {
+                const enhancements = enhancementsContainer.querySelectorAll('.enhancement-card');
+                const isCurrentlyVisible = enhancements[0] && enhancements[0].style.display === 'block';
+
+                enhancements.forEach(enhancement => {
+                    enhancement.style.display = isCurrentlyVisible ? 'none' : 'block';
+                });
+
+                toggleButton.textContent = isCurrentlyVisible ? 'Show Enhancements' : 'Hide Enhancements';
+            }
+        }
+
+        function findControlById(controlId) {
+            return allControls.find(control => control.id === controlId);
+        }
+
+        function showControlModal(controlId) {
+            const targetControl = findControlById(controlId);
+
+            if (!targetControl) {
+                alert(`Control ${controlId} not found in the current dataset.`);
+                return;
+            }
+
+            const overlays = getOverlayInfo(controlId);
+
+            // Create modal overlay
+            const modalOverlay = document.createElement('div');
+            modalOverlay.className = 'modal-overlay';
+            modalOverlay.onclick = (e) => {
+                if (e.target === modalOverlay) {
+                    closeModal();
+                }
+            };
+
+            // Create modal content
+            const modalContent = document.createElement('div');
+            modalContent.className = 'modal-content';
+
+            modalContent.innerHTML = `
+                <div class="modal-header">
+                    <div class="modal-title">Control Preview</div>
+                    <button class="modal-close" onclick="closeModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-control-info">
+                        <div class="modal-control-id">${formatControlId(targetControl.id)}</div>
+                        <div class="modal-control-name">${targetControl.name}</div>
+                        <div class="modal-control-text">
+                            <strong>Control Text:</strong><br>
+                            ${formatControlText(targetControl.text)}
+                        </div>
+                        ${overlays.length > 0 ? `
+                            <div class="modal-overlays">
+                                <div class="modal-overlay-badges">
+                                    ${overlays.map(overlay => {
+                let badgeClass = '';
+                let text = '';
+                switch (overlay.type) {
+                    case 'fedramp':
+                        badgeClass = 'overlay-fedramp';
+                        text = 'FEDRAMP HIGH';
+                        break;
+                    case 'fedrampplus':
+                        badgeClass = 'overlay-fedrampplus';
+                        text = 'FEDRAMP+';
+                        break;
+                    case 'cnssi':
+                        badgeClass = 'overlay-cnssi';
+                        text = 'CNSSI 1253';
+                        break;
+                    case 'classified':
+                        badgeClass = 'overlay-classified';
+                        text = 'CLASSIFIED INFO';
+                        break;
+                    default:
+                        badgeClass = 'overlay-fedramp';
+                        text = overlay.name.toUpperCase();
+                }
+                return `<span class="modal-overlay-badge ${badgeClass}">${text}</span>`;
+            }).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        <div class="modal-actions">
+                            <button class="modal-button modal-button-primary" onclick="closeModal()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(modalOverlay);
+            modalOverlay.appendChild(modalContent);
+            modalContent.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function closeModal() {
+            const modalOverlay = document.querySelector('.modal-overlay');
+            if (modalOverlay) {
+                modalOverlay.remove();
+            }
+        }
+
+        function getOverlayInfo(controlId) {
+            const overlays = [];
+
+            // Check FedRAMP High - search through all families
+            // Try both the original controlId and a version with spaces around parentheses
+            const fedRampControlId = controlId.replace(/\((\d+)\)/, ' ($1)'); // "SC-7(3)" -> "SC-7 (3)"
+
+            for (const family in fedRampData) {
+                if (fedRampData[family]) {
+                    // Try original format first
+                    if (fedRampData[family][controlId]) {
+                        overlays.push({
+                            type: 'fedramp',
+                            name: 'FedRAMP High',
+                            data: fedRampData[family][controlId]
+                        });
+                        break;
+                    }
+                    // Try format with spaces around parentheses
+                    else if (fedRampData[family][fedRampControlId]) {
+                        overlays.push({
+                            type: 'fedramp',
+                            name: 'FedRAMP High',
+                            data: fedRampData[family][fedRampControlId]
+                        });
+                        break;
+                    }
+                }
+            }
+
+            // Check FedRAMP+ - direct lookup
+            if (fedRampPlusData && fedRampPlusData[controlId]) {
+                overlays.push({
+                    type: 'fedrampplus',
+                    name: 'FedRAMP+',
+                    data: fedRampPlusData[controlId]
+                });
+            }
+
+            // Check CNSSI 1253 - direct lookup
+            if (cnssiData && cnssiData[controlId]) {
+                const cnssiControl = cnssiData[controlId];
+                // Check if any CIA selections are true
+                const hasSelection = ['confidentiality', 'integrity', 'availability'].some(cia =>
+                    cnssiControl.selections[cia] &&
+                    ['low', 'moderate', 'high'].some(level => cnssiControl.selections[cia][level])
+                );
+                if (cnssiControl.selected || hasSelection) {
+                    overlays.push({
+                        type: 'cnssi',
+                        name: 'CNSSI 1253',
+                        data: cnssiControl
+                    });
+                }
+            }
+
+            // Check Classified Information - direct lookup
+            if (classifiedData && classifiedData[controlId]) {
+                overlays.push({
+                    type: 'classified',
+                    name: 'Classified Information',
+                    data: classifiedData[controlId]
+                });
+            }
+
+            return overlays;
+        }
+
+        function renderOverlay(overlay) {
+            const overlayDiv = document.createElement('div');
+            overlayDiv.className = 'overlay-card';
+
+            let badgeClass = '';
+            switch (overlay.type) {
+                case 'fedramp':
+                    badgeClass = 'overlay-fedramp';
+                    break;
+                case 'fedrampplus':
+                    badgeClass = 'overlay-fedrampplus';
+                    break;
+                case 'cnssi':
+                    badgeClass = 'overlay-cnssi';
+                    break;
+                case 'classified':
+                    badgeClass = 'overlay-classified';
+                    break;
+                default:
+                    badgeClass = 'overlay-fedramp';
+                    break;
+            }
+
+            let content = `
+                <div class="overlay-header">
+                    <span class="overlay-badge ${badgeClass}">${overlay.name}</span>
+                </div>
+            `;
+
+            let hasContent = false;
+
+            // Handle FedRAMP assessment procedures
+            if (overlay.type === 'fedramp' && overlay.data.assessment_procedures) {
+                content += '<div class="assessment-procedures"><strong>Assessment Procedures:</strong>';
+                overlay.data.assessment_procedures.forEach(proc => {
+                    content += `
+                        <div class="assessment-procedure">
+                            <div class="procedure-id">${proc.procedure_id}</div>
+                            ${proc.objective ? `<div class="procedure-method"><strong>Objective:</strong> ${proc.objective}</div>` : ''}
+                            ${proc.parameter ? `<div class="procedure-method"><strong>Parameter:</strong> ${proc.parameter}</div>` : ''}
+                            ${proc.guidance ? `<div class="procedure-method"><strong>Guidance:</strong> ${proc.guidance}</div>` : ''}
+                            ${proc.test_method ? `<div class="procedure-method"><strong>Test Method:</strong> ${proc.test_method}</div>` : ''}
+                        </div>
+                    `;
+                });
+                content += '</div>';
+                hasContent = true;
+            }
+
+            // Handle CNSSI 1253 specific format
+            else if (overlay.type === 'cnssi') {
+                content += '<div class="overlay-attributes">';
+                let cnssiHasContent = false;
+
+                // Display CIA selections
+                const selections = overlay.data.selections;
+                let selectionText = [];
+
+                // Build a more readable display for security control baselines
+                const baselineDisplay = [];
+
+                ['confidentiality', 'integrity', 'availability'].forEach(cia => {
+                    const levels = [];
+                    if (selections[cia]) {
+                        if (selections[cia].low) levels.push('Low');
+                        if (selections[cia].moderate) levels.push('Moderate');
+                        if (selections[cia].high) levels.push('High');
+                    }
+                    if (levels.length > 0) {
+                        const ciaFull = cia.charAt(0).toUpperCase() + cia.slice(1);
+                        baselineDisplay.push(`<strong>${ciaFull}:</strong> ${levels.join(', ')}`);
+                    }
+                });
+
+                if (selections.special_text) {
+                    // Display special case text for PM/PT controls
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Security Impact Levels:</div>
+                            <div class="overlay-attribute-value">${selections.special_text}</div>
+                        </div>
+                    `;
+                    cnssiHasContent = true;
+                } else if (baselineDisplay.length > 0) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Security Impact Levels:</div>
+                            <div class="overlay-attribute-value">${baselineDisplay.join('<br>')}</div>
+                        </div>
+                    `;
+                    cnssiHasContent = true;
+                }
+
+                if (overlay.data.parameter_value) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Parameter Value:</div>
+                            <div class="overlay-attribute-value">${overlay.data.parameter_value}</div>
+                        </div>
+                    `;
+                    cnssiHasContent = true;
+                }
+
+                if (overlay.data.justification) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Justification:</div>
+                            <div class="overlay-attribute-value">${overlay.data.justification}</div>
+                        </div>
+                    `;
+                    cnssiHasContent = true;
+                }
+
+                content += '</div>';
+                if (cnssiHasContent) hasContent = true;
+            }
+
+            // Handle FedRAMP+ specific format
+            else if (overlay.type === 'fedrampplus') {
+                content += '<div class="overlay-attributes">';
+                let fedRampPlusHasContent = false;
+                if (overlay.data.parameter_values) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Parameter Values:</div>
+                            <div class="overlay-attribute-value">${overlay.data.parameter_values}</div>
+                        </div>
+                    `;
+                    fedRampPlusHasContent = true;
+                }
+                if (overlay.data.impact_levels) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Impact Levels:</div>
+                            <div class="overlay-attribute-value">${overlay.data.impact_levels}</div>
+                        </div>
+                    `;
+                    fedRampPlusHasContent = true;
+                }
+                content += '</div>';
+                if (fedRampPlusHasContent) hasContent = true;
+            }
+
+            // Handle Classified Information specific format
+            else if (overlay.type === 'classified') {
+                content += '<div class="overlay-attributes">';
+                let classifiedHasContent = false;
+
+                if (overlay.data.justification) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Justification:</div>
+                            <div class="overlay-attribute-value">${overlay.data.justification}</div>
+                        </div>
+                    `;
+                    classifiedHasContent = true;
+                }
+                if (overlay.data.parameter_value) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Parameter Value:</div>
+                            <div class="overlay-attribute-value">${overlay.data.parameter_value}</div>
+                        </div>
+                    `;
+                    classifiedHasContent = true;
+                }
+                if (overlay.data.guidance) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">Guidance:</div>
+                            <div class="overlay-attribute-value">${overlay.data.guidance}</div>
+                        </div>
+                    `;
+                    classifiedHasContent = true;
+                }
+                if (overlay.data.references) {
+                    content += `
+                        <div class="overlay-attribute">
+                            <div class="overlay-attribute-label">References:</div>
+                            <div class="overlay-attribute-value">${overlay.data.references}</div>
+                        </div>
+                    `;
+                    classifiedHasContent = true;
+                }
+
+                content += '</div>';
+                if (classifiedHasContent) hasContent = true;
+            }
+
+            // Handle other overlay attributes (for other overlays)
+            else if (overlay.data.attributes && Object.keys(overlay.data.attributes).length > 0) {
+                content += '<div class="overlay-attributes">';
+                for (const [key, value] of Object.entries(overlay.data.attributes)) {
+                    if (value && value !== null) {
+                        content += `
+                            <div class="overlay-attribute">
+                                <div class="overlay-attribute-label">${key}:</div>
+                                <div class="overlay-attribute-value">${value}</div>
+                            </div>
+                        `;
+                        hasContent = true;
+                    }
+                }
+                content += '</div>';
+            }
+
+            // If no content was found, display "Selected" in italics
+            if (!hasContent) {
+                content += '<div class="overlay-content" style="font-style: italic;">Selected</div>';
+            }
+
+            overlayDiv.innerHTML = content;
+            return overlayDiv;
+        }
+
+        function isControlWithdrawn(control) {
+            // Check if control is withdrawn based on common indicators
+            if (control.withdrawn === true) {
+                return true;
+            }
+
+            // Check if the control text contains withdrawal language
+            if (control.text && control.text.toLowerCase().includes('withdrawn')) {
+                return true;
+            }
+
+            // Check if discussion contains withdrawal language
+            if (control.discussion && control.discussion.toLowerCase().includes('withdrawn')) {
+                return true;
+            }
+
+            return false;
+        }
+
+        function getNistUrl(controlId) {
+            // Only create links for parent controls (not enhancements)
+            if (controlId.includes('(')) {
+                return null;
+            }
+
+            // Split control ID (e.g., "SC-1" -> ["SC", "1"])
+            const parts = controlId.split('-');
+            if (parts.length !== 2) {
+                return null;
+            }
+
+            const family = parts[0];
+            const number = parts[1];
+
+            // Pad single digit numbers with zero (e.g., "1" -> "01")
+            const paddedNumber = number.padStart(2, '0');
+            const element = `${family}-${paddedNumber}`;
+
+            return `https://csrc.nist.gov/projects/cprt/catalog#/cprt/framework/version/SP_800_53_5_1_1/home?element=${element}`;
+        }
+
+        function getOverlayBadgesHtml(overlays) {
+            return overlays.map(overlay => {
+                let badgeClass = '';
+                let text = '';
+                switch (overlay.type) {
+                    case 'fedramp':
+                        badgeClass = 'overlay-fedramp';
+                        text = 'FEDRAMP HIGH';
+                        break;
+                    case 'fedrampplus':
+                        badgeClass = 'overlay-fedrampplus';
+                        text = 'FEDRAMP+';
+                        break;
+                    case 'cnssi':
+                        badgeClass = 'overlay-cnssi';
+                        text = 'CNSSI 1253';
+                        break;
+                    case 'classified':
+                        badgeClass = 'overlay-classified';
+                        text = 'CLASSIFIED INFO';
+                        break;
+                    default:
+                        badgeClass = 'overlay-fedramp';
+                        text = overlay.name.toUpperCase();
+                }
+                return `<span class="overlay-mini-badge ${badgeClass}">${text}</span>`;
+            }).join('');
+        }
+
+        function groupControlsByParent(controls) {
+            const grouped = {};
+
+            controls.forEach(control => {
+                if (control.isEnhancement) {
+                    const parentId = control.baseControlId;
+                    if (!grouped[parentId]) {
+                        grouped[parentId] = { parent: null, enhancements: [] };
+                    }
+                    grouped[parentId].enhancements.push(control);
+                } else {
+                    if (!grouped[control.id]) {
+                        grouped[control.id] = { parent: null, enhancements: [] };
+                    }
+                    grouped[control.id].parent = control;
+                }
+            });
+
+            // Sort enhancements by their enhancement number
+            Object.keys(grouped).forEach(parentId => {
+                grouped[parentId].enhancements.sort((a, b) => {
+                    const aNum = parseInt(a.enhancementNumber) || 0;
+                    const bNum = parseInt(b.enhancementNumber) || 0;
+                    return aNum - bNum;
+                });
+            });
+
+            return grouped;
+        }
+
+        function renderEnhancement(enhancement, isExpanded) {
+            const overlays = getOverlayInfo(enhancement.id);
+            const enhancementId = enhancement.id.replace(/[()]/g, '_');
+            const isWithdrawn = isControlWithdrawn(enhancement);
+
+            const grayedOutStyle = overlays.length === 0 ? 'background-color: #f8f9fa; opacity: 0.6;' : '';
+
+            return `
+                <div class="enhancement-card" style="display: ${isExpanded ? 'block' : 'none'}; ${grayedOutStyle}">
+                    <div class="enhancement-header ${enhancement.catalog === 'sl5' ? 'sl5-style' : ''}" onclick="toggleControl('${enhancementId}')">
+                        <div style="display: flex; align-items: center; flex: 1;">
+                            <span class="enhancement-id">${formatControlId(enhancement.id)}</span>
+                            ${isWithdrawn ? `<span class="withdrawn-badge">Withdrawn</span>` : ''}
+                            <span class="enhancement-name">${enhancement.name}</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            ${overlays.length > 0 ? `<span class="overlay-count">${overlays.length} overlay${overlays.length > 1 ? 's' : ''}</span><span class="overlay-badges">${getOverlayBadgesHtml(overlays)}</span>` : ''}
+                            <span class="expand-icon" id="icon-${enhancementId}">▼</span>
+                        </div>
+                    </div>
+                    <div class="control-details" id="details-${enhancementId}">
+                        <div class="control-text"><strong>Enhancement Text:</strong><br>${formatControlText(enhancement.text)}</div>
+                        ${enhancement.discussion ? `
+                            <div class="control-discussion">
+                                <div class="discussion-title">Discussion:</div>
+                                ${enhancement.discussion}
+                            </div>
+                        ` : ''}
+                        ${enhancement.relatedControls && enhancement.relatedControls.length > 0 ? `
+                            <div class="related-controls">
+                                <h4>Related Controls:</h4>
+                                <div class="related-controls-list">
+                                    ${enhancement.relatedControls.map(rc => `<span class="related-control-tag" onclick="showControlModal('${rc}')">${formatControlId(rc)}</span>`).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        <div class="overlays-section">
+                            <h3 class="overlays-title">Overlays</h3>
+                            <div id="overlays-${enhancementId}">
+                                ${overlays.length === 0 ? '<div class="no-overlays">No overlays apply to this enhancement.</div>' : ''}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+
+</html>

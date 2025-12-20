@@ -1,0 +1,1830 @@
+[
+  {
+    "id": "AC-1",
+    "name": "Access Control Policy and Procedures"
+  },
+  {
+    "id": "AC-2",
+    "name": "Account Management"
+  },
+  {
+    "id": "AC-2(1)",
+    "name": "Account Management | Automated System Account Management"
+  },
+  {
+    "id": "AC-2(2)",
+    "name": "Account Management | Removal of Temporary / Emergency Accounts"
+  },
+  {
+    "id": "AC-2(3)",
+    "name": "Account Management | Disable Inactive Accounts"
+  },
+  {
+    "id": "AC-2(4)",
+    "name": "Account Management | Automated Audit Actions"
+  },
+  {
+    "id": "AC-2(5)",
+    "name": "Account Management | Inactivity Logout"
+  },
+  {
+    "id": "AC-2(7)",
+    "name": "Account Management | Role-Based Schemes"
+  },
+  {
+    "id": "AC-2(9)",
+    "name": "Account Management | Restrictions on Use of Shared Groups / Accounts"
+  },
+  {
+    "id": "AC-2(10)",
+    "name": "Account Management | Shared / Group Account Credential Termination"
+  },
+  {
+    "id": "AC-2(11)",
+    "name": "Account Management | Usage Conditions"
+  },
+  {
+    "id": "AC-2(12)",
+    "name": "Account Management | Account Monitoring / Atypical Usage"
+  },
+  {
+    "id": "AC-2(13)",
+    "name": "Account Management | Disable Accounts For High-Risk Individuals"
+  },
+  {
+    "id": "AC-3",
+    "name": "Access Enforcement"
+  },
+  {
+    "id": "AC-3(4)",
+    "name": "Access Enforcement | Discretionary Access Control"
+  },
+  {
+    "id": "AC-4",
+    "name": "Information Flow Enforcement"
+  },
+  {
+    "id": "AC-5",
+    "name": "Separation of Duties"
+  },
+  {
+    "id": "AC-6",
+    "name": "Least Privilege"
+  },
+  {
+    "id": "AC-6(1)",
+    "name": "Least Privilege | Authorize Access to Security Functions"
+  },
+  {
+    "id": "AC-6(2)",
+    "name": "Least Privilege | Non-Privileged Access For Nonsecurity Functions"
+  },
+  {
+    "id": "AC-6(3)",
+    "name": "Least Privilege | Network Access to Privileged Commands"
+  },
+  {
+    "id": "AC-6(5)",
+    "name": "Least Privilege | Privileged Accounts"
+  },
+  {
+    "id": "AC-6(7)",
+    "name": "Least Privilege | Review of User Privileges"
+  },
+  {
+    "id": "AC-6(8)",
+    "name": "Least Privilege | Privilege Levels For Code Execution"
+  },
+  {
+    "id": "AC-6(9)",
+    "name": "Least Privilege | Auditing Use of Privileged Functions"
+  },
+  {
+    "id": "AC-6(10)",
+    "name": "Least Privilege | Prohibit Nonprivileged Users from Executing Privileged Functions"
+  },
+  {
+    "id": "AC-7",
+    "name": "Unsuccessful Logon Attempts"
+  },
+  {
+    "id": "AC-8",
+    "name": "System Use Notification"
+  },
+  {
+    "id": "AC-10",
+    "name": "Concurrent Session Control"
+  },
+  {
+    "id": "AC-11",
+    "name": "Session Lock"
+  },
+  {
+    "id": "AC-11(1)",
+    "name": "Session Lock | Pattern-Hiding Displays"
+  },
+  {
+    "id": "AC-12",
+    "name": "Session Termination"
+  },
+  {
+    "id": "AC-12(1)",
+    "name": "Session Termination | User-initiated Logouts / Message Displays"
+  },
+  {
+    "id": "AC-14",
+    "name": "Permitted Actions Without Identification or Authentication"
+  },
+  {
+    "id": "AC-16",
+    "name": "Security Attributes"
+  },
+  {
+    "id": "AC-16(6)",
+    "name": "Security Attributes | Maintenance of Attribute Association by Organization"
+  },
+  {
+    "id": "AC-17",
+    "name": "Remote Access"
+  },
+  {
+    "id": "AC-17(1)",
+    "name": "Remote Access | Automated Monitoring / Control"
+  },
+  {
+    "id": "AC-17(3)",
+    "name": "Remote Access | Managed Access Control Points"
+  },
+  {
+    "id": "AC-17(4)",
+    "name": "Remote Access | Privileged Commands / Access"
+  },
+  {
+    "id": "AC-17(6)",
+    "name": "Remote Access | Protection of Information"
+  },
+  {
+    "id": "AC-17(9)",
+    "name": "Remote Access | Disconnect / Disable Access"
+  },
+  {
+    "id": "AC-18",
+    "name": "Wireless Access"
+  },
+  {
+    "id": "AC-18(1)",
+    "name": "Wireless Access | Authentication and Encryption"
+  },
+  {
+    "id": "AC-18(3)",
+    "name": "Wireless Access | Disable Wireless Networking"
+  },
+  {
+    "id": "AC-18(4)",
+    "name": "Wireless Access | Restrict Configurations by Users"
+  },
+  {
+    "id": "AC-18(5)",
+    "name": "Wireless Access | Antennas / Transmission Power Levels"
+  },
+  {
+    "id": "AC-19",
+    "name": "Access Control For Mobile Devices"
+  },
+  {
+    "id": "AC-19(5)",
+    "name": "Access Control For Mobile Devices | Full Device / Container-Based Encryption"
+  },
+  {
+    "id": "AC-20",
+    "name": "Use of External Information Systems"
+  },
+  {
+    "id": "AC-20(1)",
+    "name": "Use of External Information Systems | Limits on Authorized Use"
+  },
+  {
+    "id": "AC-20(2)",
+    "name": "Use of External Information Systems | Portable Storage Devices"
+  },
+  {
+    "id": "AC-20(3)",
+    "name": "Use of External Information Systems | Non- Organizationally Owned Systems / / Components / Devices"
+  },
+  {
+    "id": "AC-21",
+    "name": "Information Sharing"
+  },
+  {
+    "id": "AC-22",
+    "name": "Publicly Accessible Content"
+  },
+  {
+    "id": "AC-23",
+    "name": "Data Mining Protection"
+  },
+  {
+    "id": "AT-1",
+    "name": "Security Awareness and Training Policy and Procedures"
+  },
+  {
+    "id": "AT-2",
+    "name": "Security Awareness Training"
+  },
+  {
+    "id": "AT-2(2)",
+    "name": "Security Awareness | Insider Threat"
+  },
+  {
+    "id": "AT-3",
+    "name": "Role-Based Security Training"
+  },
+  {
+    "id": "AT-3(2)",
+    "name": "Security Training | Physical Security Controls"
+  },
+  {
+    "id": "AT-3(4)",
+    "name": "Security Training | Suspicious Communications and Anomalous System Behavior"
+  },
+  {
+    "id": "AT-4",
+    "name": "Security Training Records"
+  },
+  {
+    "id": "AU-1",
+    "name": "Audit and Accountability Policy and Procedures"
+  },
+  {
+    "id": "AU-2",
+    "name": "Audit Events"
+  },
+  {
+    "id": "AU-2(3)",
+    "name": "Audit Events | Reviews and Updates"
+  },
+  {
+    "id": "AU-3",
+    "name": "Content of Audit Records"
+  },
+  {
+    "id": "AU-3(1)",
+    "name": "Content of Audit Records | Additional Audit Information"
+  },
+  {
+    "id": "AU-3(2)",
+    "name": "Content of Audit Records | Centralized Management of Planned Audit Record Content"
+  },
+  {
+    "id": "AU-4",
+    "name": "Audit Storage Capacity"
+  },
+  {
+    "id": "AU-4(1)",
+    "name": "Audit Storage Capacity | Transfer to Alternate Storage"
+  },
+  {
+    "id": "AU-5",
+    "name": "Response to Audit Processing Failures"
+  },
+  {
+    "id": "AU-5(1)",
+    "name": "Response to Audit Processing Failures | Audit Storage Capacity"
+  },
+  {
+    "id": "AU-5(2)",
+    "name": "Response to Audit Processing Failures | Real- Time Alerts"
+  },
+  {
+    "id": "AU-6",
+    "name": "Audit Review, Analysis, and Reporting"
+  },
+  {
+    "id": "AU-6(1)",
+    "name": "Audit Review, Analysis, and Reporting | Process Integration"
+  },
+  {
+    "id": "AU-6(3)",
+    "name": "Audit Review, Analysis, and Reporting | Correlate Audit Repositories"
+  },
+  {
+    "id": "AU-6(4)",
+    "name": "Audit Review, Analysis, and Reporting | Central Review and Analysis"
+  },
+  {
+    "id": "AU-6(5)",
+    "name": "Audit Review, Analysis, and Reporting | Integration / Scanning and Monitoring Capabilities"
+  },
+  {
+    "id": "AU-6(6)",
+    "name": "Audit Review, Analysis, and Reporting | Correlation With Physical Monitoring"
+  },
+  {
+    "id": "AU-6(10)",
+    "name": "Audit Review, Analysis, and Reporting | Audit Level Adjustment"
+  },
+  {
+    "id": "AU-7",
+    "name": "Audit Reduction and Report Generation"
+  },
+  {
+    "id": "AU-7(1)",
+    "name": "Audit Reduction and Report Generation | Automatic Processing"
+  },
+  {
+    "id": "AU-8",
+    "name": "Time Stamps"
+  },
+  {
+    "id": "AU-8(1)",
+    "name": "Time Stamps | Synchronization With Authoritative Time Source"
+  },
+  {
+    "id": "AU-9",
+    "name": "Protection of Audit Information"
+  },
+  {
+    "id": "AU-9(2)",
+    "name": "Protection of Audit Information | Audit Backup on Separate Physical Systems / Components"
+  },
+  {
+    "id": "AU-9(3)",
+    "name": "Protection of Audit Information | Cryptographic Protection"
+  },
+  {
+    "id": "AU-9(4)",
+    "name": "Protection of Audit Information | Access by Subset of Privileged Users"
+  },
+  {
+    "id": "AU-10",
+    "name": "Non-Repudiation"
+  },
+  {
+    "id": "AU-11",
+    "name": "Audit Record Retention"
+  },
+  {
+    "id": "AU-11(1)",
+    "name": "Audit Record Retention | Long-Term Retrieval Capability"
+  },
+  {
+    "id": "AU-12",
+    "name": "Audit Generation"
+  },
+  {
+    "id": "AU-12(1)",
+    "name": "Audit Generation | System-Wide / Time- Correlated Audit Trail"
+  },
+  {
+    "id": "AU-12(3)",
+    "name": "Audit Generation | Changes by Authorized Individuals"
+  },
+  {
+    "id": "AU-14",
+    "name": "Session Audit"
+  },
+  {
+    "id": "AU-14(1)",
+    "name": "Session Audit | System Start-Up"
+  },
+  {
+    "id": "AU-14(2)",
+    "name": "Session Audit | Capture/Record and Log Content"
+  },
+  {
+    "id": "AU-14(3)",
+    "name": "Session Audit | Remote Viewing / Listening"
+  },
+  {
+    "id": "CA-1",
+    "name": "Security Assessment and Authorization Policies and Procedures"
+  },
+  {
+    "id": "CA-2",
+    "name": "Security Assessments"
+  },
+  {
+    "id": "CA-2(1)",
+    "name": "Security Assessments | Independent Assessors"
+  },
+  {
+    "id": "CA-2(2)",
+    "name": "Security Assessments | Specialized Assessments"
+  },
+  {
+    "id": "CA-3",
+    "name": "System Interconnections"
+  },
+  {
+    "id": "CA-3(1)",
+    "name": "System Interconnections | Unclassified National Security System Connections"
+  },
+  {
+    "id": "CA-3(5)",
+    "name": "System Interconnections | Restrictions on External Network Connections"
+  },
+  {
+    "id": "CA-5",
+    "name": "Plan of Action and Milestones"
+  },
+  {
+    "id": "CA-6",
+    "name": "Security Authorization"
+  },
+  {
+    "id": "CA-7",
+    "name": "Continuous Monitoring"
+  },
+  {
+    "id": "CA-7(1)",
+    "name": "Continuous Monitoring | Independent Assessment"
+  },
+  {
+    "id": "CA-8",
+    "name": "Penetration Testing"
+  },
+  {
+    "id": "CA-9",
+    "name": "Internal System Connections"
+  },
+  {
+    "id": "CM-1",
+    "name": "Configuration Management Policy and Procedures"
+  },
+  {
+    "id": "CM-2",
+    "name": "Baseline Configuration"
+  },
+  {
+    "id": "CM-2(1)",
+    "name": "Baseline Configuration | Reviews and Updates"
+  },
+  {
+    "id": "CM-2(2)",
+    "name": "Baseline Configuration | Automation Support For Accuracy / Currency"
+  },
+  {
+    "id": "CM-2(3)",
+    "name": "Baseline Configuration | Retention of Previous Configurations"
+  },
+  {
+    "id": "CM-2(7)",
+    "name": "Baseline Configuration | Configure Systems, Components, or Devices for High-Risk Areas"
+  },
+  {
+    "id": "CM-3",
+    "name": "Configuration Change Control"
+  },
+  {
+    "id": "CM-3(1)",
+    "name": "Configuration Change Control | Automated Document / Notification / Prohibition of Changes"
+  },
+  {
+    "id": "CM-3(2)",
+    "name": "Configuration Change Control | Test / Validate / Document Changes"
+  },
+  {
+    "id": "CM-3(4)",
+    "name": "Configuration Change Control | Security Representative"
+  },
+  {
+    "id": "CM-3(5)",
+    "name": "Configuration Change Control | Automated Security Response"
+  },
+  {
+    "id": "CM-3(6)",
+    "name": "Configuration Change Control | Cryptography Management"
+  },
+  {
+    "id": "CM-4",
+    "name": "Security Impact Analysis"
+  },
+  {
+    "id": "CM-4(1)",
+    "name": "Security Impact Analysis | Separate Test Environments"
+  },
+  {
+    "id": "CM-5",
+    "name": "Access Restrictions For Change"
+  },
+  {
+    "id": "CM-5(1)",
+    "name": "Access Restrictions For Change | Automated Access Enforcement / Auditing"
+  },
+  {
+    "id": "CM-5(2)",
+    "name": "Access Restrictions For Change | Review System Changes"
+  },
+  {
+    "id": "CM-5(3)",
+    "name": "Access Restrictions For Change | Signed Components"
+  },
+  {
+    "id": "CM-5(5)",
+    "name": "Access Restrictions For Change | Limit Production / Operational Privileges"
+  },
+  {
+    "id": "CM-5(6)",
+    "name": "Access Restrictions For Change | Limit Library Privileges"
+  },
+  {
+    "id": "CM-6",
+    "name": "Configuration Settings"
+  },
+  {
+    "id": "CM-6(1)",
+    "name": "Configuration Settings | Automated Central Management / Application / Verification"
+  },
+  {
+    "id": "CM-6(2)",
+    "name": "Configuration Settings | Respond to Unauthorized Changes"
+  },
+  {
+    "id": "CM-7",
+    "name": "Least Functionality"
+  },
+  {
+    "id": "CM-7(1)",
+    "name": "Least Functionality | Periodic Review"
+  },
+  {
+    "id": "CM-7(2)",
+    "name": "Least Functionality | Prevent Program Execution"
+  },
+  {
+    "id": "CM-7(3)",
+    "name": "Least Functionality | Registration Compliance"
+  },
+  {
+    "id": "CM-7(5)",
+    "name": "Least Functionality | Authorized Software / Whitelisting"
+  },
+  {
+    "id": "CM-8",
+    "name": "Information System Component Inventory"
+  },
+  {
+    "id": "CM-8(1)",
+    "name": "Information System Component Inventory | Updates During Installations / Removals"
+  },
+  {
+    "id": "CM-8(2)",
+    "name": "Information System Component Inventory | Automated Maintenance"
+  },
+  {
+    "id": "CM-8(3)",
+    "name": "Information System Component Inventory | Automated Unauthorized Component Detection"
+  },
+  {
+    "id": "CM-8(4)",
+    "name": "Information System Component Inventory | Accountability Information"
+  },
+  {
+    "id": "CM-8(5)",
+    "name": "Information System Component Inventory | No Duplicate Accounting of Components"
+  },
+  {
+    "id": "CM-9",
+    "name": "Configuration Management Plan"
+  },
+  {
+    "id": "CM-10",
+    "name": "Software Usage Restrictions"
+  },
+  {
+    "id": "CM-10(1)",
+    "name": "Software Usage Restrictions | Open Source Software"
+  },
+  {
+    "id": "CM-11",
+    "name": "User-Installed Software"
+  },
+  {
+    "id": "CM-11(1)",
+    "name": "User-Installed Software | Alerts For Unauthorized Installations"
+  },
+  {
+    "id": "CM-11(2)",
+    "name": "User-Installed Software | Prohibit Installation without Privileged Status"
+  },
+  {
+    "id": "CP-1",
+    "name": "Contingency Planning Policy and Procedures"
+  },
+  {
+    "id": "CP-2",
+    "name": "Contingency Plan"
+  },
+  {
+    "id": "CP-2(1)",
+    "name": "Contingency Plan | Coordinate With Related Plans"
+  },
+  {
+    "id": "CP-2(2)",
+    "name": "Contingency Plan | Capacity Planning"
+  },
+  {
+    "id": "CP-2(3)",
+    "name": "Contingency Plan | Resume Essential Missions / Business Functions"
+  },
+  {
+    "id": "CP-2(4)",
+    "name": "Contingency Plan | Resume All Missions / Business Functions"
+  },
+  {
+    "id": "CP-2(5)",
+    "name": "Contingency Plan | Continue Essential Missions / Business Functions"
+  },
+  {
+    "id": "CP-2(8)",
+    "name": "Contingency Plan | Identify Critical Assets"
+  },
+  {
+    "id": "CP-3",
+    "name": "Contingency Training"
+  },
+  {
+    "id": "CP-3(1)",
+    "name": "Contingency Training | Simulated Events"
+  },
+  {
+    "id": "CP-4",
+    "name": "Contingency Plan Testing"
+  },
+  {
+    "id": "CP-4(1)",
+    "name": "Contingency Plan Testing | Coordinate With Related Plans"
+  },
+  {
+    "id": "CP-4(2)",
+    "name": "Contingency Plan Testing | Alternate Processing Site"
+  },
+  {
+    "id": "CP-6",
+    "name": "Alternate Storage Site"
+  },
+  {
+    "id": "CP-6(1)",
+    "name": "Alternate Storage Site | Separation From Primary Site"
+  },
+  {
+    "id": "CP-6(2)",
+    "name": "Alternate Storage Site | Recovery Time / Point Objectives"
+  },
+  {
+    "id": "CP-6(3)",
+    "name": "Alternate Storage Site | Accessibility"
+  },
+  {
+    "id": "CP-7",
+    "name": "Alternate Processing Site"
+  },
+  {
+    "id": "CP-7(1)",
+    "name": "Alternate Processing Site | Separation From Primary Site"
+  },
+  {
+    "id": "CP-7(2)",
+    "name": "Alternate Processing Site | Accessibility"
+  },
+  {
+    "id": "CP-7(3)",
+    "name": "Alternate Processing Site | Priority of Service"
+  },
+  {
+    "id": "CP-7(4)",
+    "name": "Alternate Processing Site | Preparation for Use"
+  },
+  {
+    "id": "CP-8",
+    "name": "Telecommunications Services"
+  },
+  {
+    "id": "CP-8(1)",
+    "name": "Telecommunications Services | Priority of Service Provisions"
+  },
+  {
+    "id": "CP-8(2)",
+    "name": "Telecommunications Services | Single Points of Failure"
+  },
+  {
+    "id": "CP-8(3)",
+    "name": "Telecommunications Services | Separation of Primary / Alternate Providers"
+  },
+  {
+    "id": "CP-8(4)",
+    "name": "Telecommunications Services | Provider Contingency Plan"
+  },
+  {
+    "id": "CP-8(5)",
+    "name": "Telecommunications Services | Alternate Telecommunication Service Testing"
+  },
+  {
+    "id": "CP-9",
+    "name": "Information System Backup"
+  },
+  {
+    "id": "CP-9(1)",
+    "name": "Information System Backup | Testing For"
+  },
+  {
+    "id": "CP-9(2)",
+    "name": "Information System Backup | Test Restoration Using Sampling"
+  },
+  {
+    "id": "CP-9(3)",
+    "name": "Information System Backup | Separate Storage for Critical Information"
+  },
+  {
+    "id": "CP-9(5)",
+    "name": "Information System Backup | Transfer to Alternate Storage Site"
+  },
+  {
+    "id": "CP-10",
+    "name": "Information System Recovery and Reconstitution"
+  },
+  {
+    "id": "CP-10(2)",
+    "name": "Information System Recovery and Reconstitution | Transaction Recovery"
+  },
+  {
+    "id": "CP-10(4)",
+    "name": "Information System Recovery and Reconstitution | Restore Within Time Period"
+  },
+  {
+    "id": "IA-1",
+    "name": "Identification and Authentication Policy and Procedures"
+  },
+  {
+    "id": "IA-2",
+    "name": "Identification and Authentication (Organizational Users)"
+  },
+  {
+    "id": "IA-2(1)",
+    "name": "Identification and Authentication (Organizational Users) | Network Access to Privileged Accounts"
+  },
+  {
+    "id": "IA-2(2)",
+    "name": "Identification and Authentication (Organizational Users) | Network Access to Non-Privileged Accounts"
+  },
+  {
+    "id": "IA-2(3)",
+    "name": "Identification and Authentication (Organizational Users) | Local Access to Privileged Accounts"
+  },
+  {
+    "id": "IA-2(4)",
+    "name": "Identification and Authentication (Organizational Users) | Local Access to Non-Privileged Accounts"
+  },
+  {
+    "id": "IA-2(5)",
+    "name": "Identification and Authentication (Organizational Users) | Group Authentication"
+  },
+  {
+    "id": "IA-2(8)",
+    "name": "Identification and Authentication (Organizational Users) | Network Access to Privileged Accounts - Replay Resistant"
+  },
+  {
+    "id": "IA-2(9)",
+    "name": "Identification and Authentication (Organizational Users) | Network Access to Non-Privileged Accounts - Replay Resistant"
+  },
+  {
+    "id": "IA-2(11)",
+    "name": "Identification and Authentication (Organizational Users) | Remote Access - Separate Device"
+  },
+  {
+    "id": "IA-2(12)",
+    "name": "Identification and Authentication (Organizational Users) | Acceptance of PIV Credentials"
+  },
+  {
+    "id": "IA-3",
+    "name": "Device Identification and Authentication"
+  },
+  {
+    "id": "IA-3(1)",
+    "name": "Device Identification and Authentication | Cryptographic Bidirectional Authentication"
+  },
+  {
+    "id": "IA-4",
+    "name": "Identifier Management"
+  },
+  {
+    "id": "IA-4(4)",
+    "name": "Identifier Management | Identify User Status"
+  },
+  {
+    "id": "IA-5",
+    "name": "Authenticator Management"
+  },
+  {
+    "id": "IA-5(1)",
+    "name": "Authenticator Management | Password-Based Authentication"
+  },
+  {
+    "id": "IA-5(2)",
+    "name": "Authenticator Management | PKI-Based Authentication"
+  },
+  {
+    "id": "IA-5(3)",
+    "name": "Authenticator Management | In Person or Trusted Third-Party Registration"
+  },
+  {
+    "id": "IA-5(4)",
+    "name": "Authenticator Management | Automated Support for Password Strength Determination"
+  },
+  {
+    "id": "IA-5(7)",
+    "name": "Authenticator Management | No Embedded Unencrypted Static Authenticators"
+  },
+  {
+    "id": "IA-5(8)",
+    "name": "Authenticator Management | Multiple Information System Accounts"
+  },
+  {
+    "id": "IA-5(11)",
+    "name": "Authenticator Management | Hardware Token-Based Authentication"
+  },
+  {
+    "id": "IA-5(13)",
+    "name": "Authenticator Management | Expiration of Cached Authenticators"
+  },
+  {
+    "id": "IA-5(14)",
+    "name": "Authenticator Management | Managing Content of PKI Trust stores"
+  },
+  {
+    "id": "IA-6",
+    "name": "Authenticator Feedback"
+  },
+  {
+    "id": "IA-7",
+    "name": "Cryptographic Module Authentication"
+  },
+  {
+    "id": "IA-8",
+    "name": "Identification and Authentication (Non- Organizational Users)"
+  },
+  {
+    "id": "IA-8(1)",
+    "name": "Identification and Authentication (Non- Organizational Users) | Acceptance of PIV Credentials from Other Agencies"
+  },
+  {
+    "id": "IA-8(2)",
+    "name": "Identification and Authentication (Non- Organizational Users) | Acceptance of Third- Party Credentials"
+  },
+  {
+    "id": "IA-8(3)",
+    "name": "Identification and Authentication (Non- Organizational Users) | Use of FICAM- Approved Products"
+  },
+  {
+    "id": "IA-8(4)",
+    "name": "Identification and Authentication (Non- Organizational Users) | Use of FICAM-Issued Profiles"
+  },
+  {
+    "id": "IA-10",
+    "name": "Adaptive Identification and Authentication"
+  },
+  {
+    "id": "IA-11",
+    "name": "Re-authentication"
+  },
+  {
+    "id": "IR-1",
+    "name": "Incident Response Policy and Procedures"
+  },
+  {
+    "id": "IR-2",
+    "name": "Incident Response Training"
+  },
+  {
+    "id": "IR-2(1)",
+    "name": "Incident Response Training | Simulated Events"
+  },
+  {
+    "id": "IR-2(2)",
+    "name": "Incident Response Training | Automated Training Environments"
+  },
+  {
+    "id": "IR-3",
+    "name": "Incident Response Testing"
+  },
+  {
+    "id": "IR-3(2)",
+    "name": "Incident Response Testing | Coordination With Related Plans"
+  },
+  {
+    "id": "IR-4",
+    "name": "Incident Handling"
+  },
+  {
+    "id": "IR-4(1)",
+    "name": "Incident Handling | Automated Incident Handling Processes"
+  },
+  {
+    "id": "IR-4(3)",
+    "name": "Incident Handling | Continuity of Operations"
+  },
+  {
+    "id": "IR-4(4)",
+    "name": "Incident Handling | Information Correlation"
+  },
+  {
+    "id": "IR-4(6)",
+    "name": "Incident Handling | Insider Threats - Specific Capabilities"
+  },
+  {
+    "id": "IR-4(7)",
+    "name": "Incident Handling | Insider Threats - Intra- Organization Coordination"
+  },
+  {
+    "id": "IR-4(8)",
+    "name": "Incident Handling | Correlation With External Organizations"
+  },
+  {
+    "id": "IR-5",
+    "name": "Incident Monitoring"
+  },
+  {
+    "id": "IR-5(1)",
+    "name": "Incident Monitoring | Automated Tracking / Data Collection / Analysis"
+  },
+  {
+    "id": "IR-6",
+    "name": "Incident Reporting"
+  },
+  {
+    "id": "IR-6(1)",
+    "name": "Incident Reporting | Automated Reporting"
+  },
+  {
+    "id": "IR-6(2)",
+    "name": "Incident Reporting | Vulnerabilities Related to Incidents"
+  },
+  {
+    "id": "IR-7",
+    "name": "Incident Response Assistance Support"
+  },
+  {
+    "id": "IR-7(1)",
+    "name": "Incident Response Assistance | Automation"
+  },
+  {
+    "id": "IR-7(2)",
+    "name": "Incident Response Assistance | Coordination With External Providers"
+  },
+  {
+    "id": "IR-8",
+    "name": "Incident Response Plan"
+  },
+  {
+    "id": "IR-9",
+    "name": "Information Spillage Response"
+  },
+  {
+    "id": "IR-9(1)",
+    "name": "Information Spillage Response | Responsible Personnel"
+  },
+  {
+    "id": "IR-9(2)",
+    "name": "Information Spillage Response | Training"
+  },
+  {
+    "id": "IR-9(3)",
+    "name": "Information Spillage Response | Post-Spill Operations"
+  },
+  {
+    "id": "IR-9(4)",
+    "name": "Information Spillage Response | Exposure to Unauthorized Personnel"
+  },
+  {
+    "id": "IR-10",
+    "name": "Integrated Information Security Cell"
+  },
+  {
+    "id": "MA-1",
+    "name": "System Maintenance Policy and Procedures"
+  },
+  {
+    "id": "MA-2",
+    "name": "Controlled Maintenance"
+  },
+  {
+    "id": "MA-2(2)",
+    "name": "Controlled Maintenance | Automated Maintenance Activities"
+  },
+  {
+    "id": "MA-3",
+    "name": "Maintenance Tools"
+  },
+  {
+    "id": "MA-3(1)",
+    "name": "Maintenance Tools | Inspect Tools"
+  },
+  {
+    "id": "MA-3(2)",
+    "name": "Maintenance Tools | Inspect Media"
+  },
+  {
+    "id": "MA-3(3)",
+    "name": "Maintenance Tools | Prevent Unauthorized Removal"
+  },
+  {
+    "id": "MA-4",
+    "name": "Nonlocal Maintenance"
+  },
+  {
+    "id": "MA-4(1)",
+    "name": "Nonlocal Maintenance | Auditing and Review"
+  },
+  {
+    "id": "MA-4(2)",
+    "name": "Nonlocal Maintenance | Document Nonlocal Maintenance"
+  },
+  {
+    "id": "MA-4(3)",
+    "name": "Nonlocal Maintenance | Comparable Security / Sanitization"
+  },
+  {
+    "id": "MA-4(6)",
+    "name": "Nonlocal Maintenance | Cryptographic Protection"
+  },
+  {
+    "id": "MA-4(7)",
+    "name": "Nonlocal Maintenance | Remote Disconnect Verification"
+  },
+  {
+    "id": "MA-5",
+    "name": "Maintenance Personnel"
+  },
+  {
+    "id": "MA-5(1)",
+    "name": "Maintenance Personnel | Individuals Without Appropriate Access"
+  },
+  {
+    "id": "MA-6",
+    "name": "Timely Maintenance"
+  },
+  {
+    "id": "MP-1",
+    "name": "Media Protection Policy and Procedures"
+  },
+  {
+    "id": "MP-2",
+    "name": "Media Access"
+  },
+  {
+    "id": "MP-3",
+    "name": "Media Marking"
+  },
+  {
+    "id": "MP-4",
+    "name": "Media Storage"
+  },
+  {
+    "id": "MP-5",
+    "name": "Media Transport"
+  },
+  {
+    "id": "MP-5(4)",
+    "name": "Media Transport | Cryptographic Protection"
+  },
+  {
+    "id": "MP-6",
+    "name": "Media Sanitization"
+  },
+  {
+    "id": "MP-6(1)",
+    "name": "Media Sanitization | Review / Approve / Track / Document / Verify"
+  },
+  {
+    "id": "MP-6(2)",
+    "name": "Media Sanitization | Equipment Testing"
+  },
+  {
+    "id": "MP-6(3)",
+    "name": "Media Sanitization | Nondestructive Techniques"
+  },
+  {
+    "id": "MP-7",
+    "name": "Media Use"
+  },
+  {
+    "id": "MP-7(1)",
+    "name": "Media Use | Prohibit Use without Owner"
+  },
+  {
+    "id": "PE-1",
+    "name": "Physical and Environmental Protection Policy and Procedures"
+  },
+  {
+    "id": "PE-2",
+    "name": "Physical Access Authorizations"
+  },
+  {
+    "id": "PE-3",
+    "name": "Physical Access Control"
+  },
+  {
+    "id": "PE-3(1)",
+    "name": "Physical Access Control | Information System Access"
+  },
+  {
+    "id": "PE-4",
+    "name": "Access Control For Transmission Medium"
+  },
+  {
+    "id": "PE-5",
+    "name": "Access Control For Output Devices"
+  },
+  {
+    "id": "PE-6",
+    "name": "Monitoring Physical Access"
+  },
+  {
+    "id": "PE-6(1)",
+    "name": "Monitoring Physical Access | Intrusion Alarms / Surveillance Equipment"
+  },
+  {
+    "id": "PE-6(4)",
+    "name": "Monitoring Physical Access | Monitoring Physical Access to Information Systems"
+  },
+  {
+    "id": "PE-8",
+    "name": "Visitor Access Records"
+  },
+  {
+    "id": "PE-8(1)",
+    "name": "Visitor Access Records | Automated Records Maintenance / Review"
+  },
+  {
+    "id": "PE-9",
+    "name": "Power Equipment and Cabling"
+  },
+  {
+    "id": "PE-10",
+    "name": "Emergency Shutoff"
+  },
+  {
+    "id": "PE-11",
+    "name": "Emergency Power"
+  },
+  {
+    "id": "PE-11(1)",
+    "name": "Emergency Power | Long-Term Alternate Power Supply - Minimal Operational Capability"
+  },
+  {
+    "id": "PE-12",
+    "name": "Emergency Lighting"
+  },
+  {
+    "id": "PE-13",
+    "name": "Fire Protection"
+  },
+  {
+    "id": "PE-13(1)",
+    "name": "Fire Protection | Detection Devices / Systems"
+  },
+  {
+    "id": "PE-13(2)",
+    "name": "Fire Protection | Suppression Devices / Systems"
+  },
+  {
+    "id": "PE-13(3)",
+    "name": "Fire Protection | Automatic Fire Suppression"
+  },
+  {
+    "id": "PE-13(4)",
+    "name": "Fire Protection | Inspections"
+  },
+  {
+    "id": "PE-14",
+    "name": "Temperature and Humidity Controls"
+  },
+  {
+    "id": "PE-15",
+    "name": "Water Damage Protection"
+  },
+  {
+    "id": "PE-15(1)",
+    "name": "Water Damage Protection | Automation Support"
+  },
+  {
+    "id": "PE-16",
+    "name": "Delivery and Removal"
+  },
+  {
+    "id": "PE-17",
+    "name": "Alternate Work Site"
+  },
+  {
+    "id": "PE-18",
+    "name": "Location of Information System Components"
+  },
+  {
+    "id": "PL-1",
+    "name": "Security Planning Policy and Procedures"
+  },
+  {
+    "id": "PL-2",
+    "name": "System Security Plan"
+  },
+  {
+    "id": "PL-2(3)",
+    "name": "System Security Plan | Plan / Coordinate With Other Organizational Entities"
+  },
+  {
+    "id": "PL-4",
+    "name": "Rules of Behavior"
+  },
+  {
+    "id": "PL-4(1)",
+    "name": "Rules of Behavior | Social Media and Networking Restrictions"
+  },
+  {
+    "id": "PL-8",
+    "name": "Information Security Architecture"
+  },
+  {
+    "id": "PL-8(1)",
+    "name": "Information Security Architecture | Defense- in-Depth"
+  },
+  {
+    "id": "PL-8(2)",
+    "name": "Information Security Architecture | Supplier Diversity"
+  },
+  {
+    "id": "PS-1",
+    "name": "Personnel Security Policy and Procedures"
+  },
+  {
+    "id": "PS-2",
+    "name": "Position Risk Designation"
+  },
+  {
+    "id": "PS-3",
+    "name": "Personnel Screening"
+  },
+  {
+    "id": "PS-4",
+    "name": "Personnel Termination"
+  },
+  {
+    "id": "PS-4(1)",
+    "name": "Personnel Termination | Post-Employment Requirements"
+  },
+  {
+    "id": "PS-4(2)",
+    "name": "Personnel Termination | Automated Notification"
+  },
+  {
+    "id": "PS-5",
+    "name": "Personnel Transfer"
+  },
+  {
+    "id": "PS-6",
+    "name": "Access Agreements"
+  },
+  {
+    "id": "PS-6(3)",
+    "name": "Access Agreements | Post-Employment Requirements"
+  },
+  {
+    "id": "PS-7",
+    "name": "Third-Party Personnel Security"
+  },
+  {
+    "id": "PS-8",
+    "name": "Personnel Sanctions"
+  },
+  {
+    "id": "RA-1",
+    "name": "Risk Assessment Policy and Procedures"
+  },
+  {
+    "id": "RA-2",
+    "name": "Security Categorization"
+  },
+  {
+    "id": "RA-3",
+    "name": "Risk Assessment"
+  },
+  {
+    "id": "RA-5",
+    "name": "Vulnerability Scanning"
+  },
+  {
+    "id": "RA-5(1)",
+    "name": "Vulnerability Scanning | Update Tool Capability"
+  },
+  {
+    "id": "RA-5(2)",
+    "name": "Vulnerability Scanning | Update by Frequency / Prior to New Scan / When Identified"
+  },
+  {
+    "id": "RA-5(4)",
+    "name": "Vulnerability Scanning | Discoverable Information"
+  },
+  {
+    "id": "RA-5(5)",
+    "name": "Vulnerability Scanning | Privileged Access"
+  },
+  {
+    "id": "RA-5(10)",
+    "name": "Vulnerability Scanning | Correlate Scanning Information"
+  },
+  {
+    "id": "SA-1",
+    "name": "System and Services Acquisition Policy and Procedures"
+  },
+  {
+    "id": "SA-2",
+    "name": "Allocation of Resources"
+  },
+  {
+    "id": "SA-3",
+    "name": "System Development Life Cycle"
+  },
+  {
+    "id": "SA-4",
+    "name": "Acquisition Process"
+  },
+  {
+    "id": "SA-4(1)",
+    "name": "Acquisition Process | Functional Properties of Security Controls"
+  },
+  {
+    "id": "SA-4(2)",
+    "name": "Acquisition Process | Design / Implementation Information for Security Controls"
+  },
+  {
+    "id": "SA-4(3)",
+    "name": "Acquisition Process | Development Methods / Techniques / Practices"
+  },
+  {
+    "id": "SA-4(5)",
+    "name": "Acquisition Process | System / Component / Service Configurations"
+  },
+  {
+    "id": "SA-4(7)",
+    "name": "Acquisition Process | NIAP-Approved Protection Profiles"
+  },
+  {
+    "id": "SA-4(9)",
+    "name": "Acquisition Process | Functions / Ports / Protocols / Services in Use"
+  },
+  {
+    "id": "SA-4(10)",
+    "name": "Acquisition Process | Use of Approved PIV Products"
+  },
+  {
+    "id": "SA-5",
+    "name": "Information System Documentation"
+  },
+  {
+    "id": "SA-8",
+    "name": "Security Engineering Principles"
+  },
+  {
+    "id": "SA-9",
+    "name": "External Information System Services"
+  },
+  {
+    "id": "SA-9(1)",
+    "name": "External Information Systems | Risk Assessments / Organizational Approvals"
+  },
+  {
+    "id": "SA-9(2)",
+    "name": "External Information Systems | Identification of Functions / Ports / Protocols / Services"
+  },
+  {
+    "id": "SA-10",
+    "name": "Developer Configuration Management"
+  },
+  {
+    "id": "SA-10(1)",
+    "name": "Developer Configuration Management |"
+  },
+  {
+    "id": "SA-11",
+    "name": "Developer Security Testing and Evaluation"
+  },
+  {
+    "id": "SA-12",
+    "name": "Supply Chain Protection"
+  },
+  {
+    "id": "SA-12(1)",
+    "name": "Supply Chain Protection | Acquisition Strategies / Tools / Methods"
+  },
+  {
+    "id": "SA-12(5)",
+    "name": "Supply Chain Protection | Limitation of Harm"
+  },
+  {
+    "id": "SA-12(8)",
+    "name": "Supply Chain Protection | Use of All-Source Intelligence"
+  },
+  {
+    "id": "SA-12(9)",
+    "name": "Supply Chain Protection | Operations Security SA- 12(10) Supply Chain Protection | Validate As Genuine and Not Altered SA- 12(11) Supply Chain Protection | Penetration Testing / Analysis of Elements, Processes, and Actors SA- 12(12) Supply Chain Protection | Inter- Organizational Agreements SA- 12(13) Supply Chain Protection | Critical Information System Components SA- 12(14) Supply Chain Protection | Identity and Traceability SA- 12(15) Supply Chain Protection | Processes to Address Weaknesses or Deficiencies"
+  },
+  {
+    "id": "SA-14",
+    "name": "Criticality Analysis"
+  },
+  {
+    "id": "SA-15",
+    "name": "Development Process, Standards, and Tools"
+  },
+  {
+    "id": "SA-15(3)",
+    "name": "Development Process, Standards, and Tools | Criticality Analysis"
+  },
+  {
+    "id": "SA-15(4)",
+    "name": "Development Process, Standards, and Tools | Threat Modeling / Vulnerability Analysis"
+  },
+  {
+    "id": "SA-15(7)",
+    "name": "Development Process, Standards, and Tools | Automated Vulnerability Analysis"
+  },
+  {
+    "id": "SA-15(9)",
+    "name": "Development Process, Standards, and Tools | Use of Live Data SA- 15(10) Development Process, Standards, and Tools | Incident Response Plan SA- 15(11) Development Process, Standards, and Tools | Archive Information System / Component"
+  },
+  {
+    "id": "SA-16",
+    "name": "Developer-Provided Training"
+  },
+  {
+    "id": "SA-17",
+    "name": "Developer Security Architecture and Design"
+  },
+  {
+    "id": "SA-19",
+    "name": "Component Authenticity"
+  },
+  {
+    "id": "SA-22",
+    "name": "Unsupported System Components"
+  },
+  {
+    "id": "SC-1",
+    "name": "System and Communications Protection Policy and Procedures"
+  },
+  {
+    "id": "SC-2",
+    "name": "Application Partitioning"
+  },
+  {
+    "id": "SC-3",
+    "name": "Security Function Isolation"
+  },
+  {
+    "id": "SC-4",
+    "name": "Information In Shared Resources"
+  },
+  {
+    "id": "SC-5",
+    "name": "Denial of Service Protection"
+  },
+  {
+    "id": "SC-5(1)",
+    "name": "Denial of Service Protection | Restrict Internal Users"
+  },
+  {
+    "id": "SC-5(2)",
+    "name": "Denial of Service Protection | Excess Capacity / Bandwidth / Redundancy"
+  },
+  {
+    "id": "SC-5(3)",
+    "name": "Denial of Service Protection | Detection / Monitoring"
+  },
+  {
+    "id": "SC-7",
+    "name": "Boundary Protection"
+  },
+  {
+    "id": "SC-7(3)",
+    "name": "Boundary Protection | Access Points"
+  },
+  {
+    "id": "SC-7(4)",
+    "name": "Boundary Protection | External Telecommunications Services"
+  },
+  {
+    "id": "SC-7(5)",
+    "name": "Boundary Protection | Deny by Default / Allow by Exception"
+  },
+  {
+    "id": "SC-7(7)",
+    "name": "Boundary Protection | Prevent Split Tunneling for Remote Devices"
+  },
+  {
+    "id": "SC-7(8)",
+    "name": "Boundary Protection | Route Traffic to Authenticated Proxy Servers"
+  },
+  {
+    "id": "SC-7(9)",
+    "name": "Boundary Protection | Restrict Threatening Outgoing Communications Traffic"
+  },
+  {
+    "id": "SC-7(10)",
+    "name": "Boundary Protection | Prevent Unauthorized Exfiltration"
+  },
+  {
+    "id": "SC-7(11)",
+    "name": "Boundary Protection | Restrict Incoming Communications Traffic"
+  },
+  {
+    "id": "SC-7(12)",
+    "name": "Boundary Protection | Host-Based Protection"
+  },
+  {
+    "id": "SC-7(13)",
+    "name": "Boundary Protection | Isolation of Security Tools / Mechanisms / Support Components"
+  },
+  {
+    "id": "SC-7(14)",
+    "name": "Boundary Protection | Protect Against Unauthorized Physical Connections"
+  },
+  {
+    "id": "SC-7(18)",
+    "name": "Boundary Protection | Fail Secure"
+  },
+  {
+    "id": "SC-7(21)",
+    "name": "Boundary Protection | Isolation of Information System Components"
+  },
+  {
+    "id": "SC-10",
+    "name": "Network Disconnect"
+  },
+  {
+    "id": "SC-12",
+    "name": "Cryptographic Key Establishment and Management"
+  },
+  {
+    "id": "SC-12(1)",
+    "name": "Cryptographic Key Establishment and"
+  },
+  {
+    "id": "SC-13",
+    "name": "Cryptographic Protection"
+  },
+  {
+    "id": "SC-15",
+    "name": "Collaborative Computing Devices"
+  },
+  {
+    "id": "SC-17",
+    "name": "Public Key Infrastructure Certificates"
+  },
+  {
+    "id": "SC-18",
+    "name": "Mobile Code"
+  },
+  {
+    "id": "SC-18(1)",
+    "name": "Mobile Code | Identify Unacceptable Code / Take Corrective Actions"
+  },
+  {
+    "id": "SC-18(2)",
+    "name": "Mobile Code | Acquisition / Development / Use"
+  },
+  {
+    "id": "SC-18(3)",
+    "name": "Mobile Code | Prevent Downloading / Execution"
+  },
+  {
+    "id": "SC-18(4)",
+    "name": "Mobile Code | Prevent Automatic Execution"
+  },
+  {
+    "id": "SC-19",
+    "name": "Voice Over Internet Protocol"
+  },
+  {
+    "id": "SC-20",
+    "name": "Secure Name / Address Resolution Service (Authoritative Source)"
+  },
+  {
+    "id": "SC-21",
+    "name": "Secure Name / Address Resolution Service (Recursive or Caching Resolver)"
+  },
+  {
+    "id": "SC-22",
+    "name": "Architecture and Provisioning for Name / Address Resolution Service"
+  },
+  {
+    "id": "SC-23",
+    "name": "Session Authenticity"
+  },
+  {
+    "id": "SC-23(1)",
+    "name": "Session Authenticity | Invalidate Session Identifiers At Logout"
+  },
+  {
+    "id": "SC-23(3)",
+    "name": "Session Authenticity | Unique Session Identifiers With Randomization"
+  },
+  {
+    "id": "SC-23(5)",
+    "name": "Session Authenticity | Allowed Certificate Authorities"
+  },
+  {
+    "id": "SC-24",
+    "name": "Fail In Known State"
+  },
+  {
+    "id": "SC-28",
+    "name": "Protection of Information At Rest"
+  },
+  {
+    "id": "SC-28(1)",
+    "name": "Protection of Information At Rest | Cryptographic Protection"
+  },
+  {
+    "id": "SC-38",
+    "name": "Operations Security"
+  },
+  {
+    "id": "SC-39",
+    "name": "Process Isolation"
+  },
+  {
+    "id": "SI-1",
+    "name": "Procedures"
+  },
+  {
+    "id": "SI-2",
+    "name": "Flaw Remediation"
+  },
+  {
+    "id": "SI-2(1)",
+    "name": "Flaw Remediation | Central Management"
+  },
+  {
+    "id": "SI-2(2)",
+    "name": "Flaw Remediation | Automated Flaw Remediation Status"
+  },
+  {
+    "id": "SI-2(3)",
+    "name": "Flaw Remediation | Time to Remediate Flaws / Benchmarks for Corrective Actions"
+  },
+  {
+    "id": "SI-2(6)",
+    "name": "Flaw Remediation | Removal of Previous Versions of Software / Firmware"
+  },
+  {
+    "id": "SI-3",
+    "name": "Malicious Code Protection"
+  },
+  {
+    "id": "SI-3(1)",
+    "name": "Malicious Code Protection | Central Management"
+  },
+  {
+    "id": "SI-3(2)",
+    "name": "Malicious Code Protection | Automatic Updates"
+  },
+  {
+    "id": "SI-3(10)",
+    "name": "Malicious Code Protection | Malicious Code Analysis"
+  },
+  {
+    "id": "SI-4",
+    "name": "Information System Monitoring"
+  },
+  {
+    "id": "SI-4(1)",
+    "name": "Information System Monitoring | System- Wide Intrusion Detection System"
+  },
+  {
+    "id": "SI-4(2)",
+    "name": "Information System Monitoring | Automated Tools For Real-Time Analysis"
+  },
+  {
+    "id": "SI-4(4)",
+    "name": "Information System Monitoring | Inbound and Outbound Communications Traffic"
+  },
+  {
+    "id": "SI-4(5)",
+    "name": "Information System Monitoring | System- Generated Alerts"
+  },
+  {
+    "id": "SI-4(10)",
+    "name": "Information System Monitoring | Visibility of Encrypted Communications"
+  },
+  {
+    "id": "SI-4(11)",
+    "name": "Information System Monitoring | Analyze Communications Traffic Anomalies"
+  },
+  {
+    "id": "SI-4(12)",
+    "name": "Information System Monitoring | Automated Alerts"
+  },
+  {
+    "id": "SI-4(14)",
+    "name": "Information System Monitoring | Wireless Intrusion Detection"
+  },
+  {
+    "id": "SI-4(15)",
+    "name": "Information System Monitoring | Wireless to Wireline Communications"
+  },
+  {
+    "id": "SI-4(16)",
+    "name": "Information System Monitoring | Correlate Monitoring Information"
+  },
+  {
+    "id": "SI-4(19)",
+    "name": "Information System Monitoring | Individuals Posing Greater Risk"
+  },
+  {
+    "id": "SI-4(20)",
+    "name": "Information System Monitoring | Privileged User"
+  },
+  {
+    "id": "SI-4(22)",
+    "name": "Information System Monitoring | Unauthorized Network Services"
+  },
+  {
+    "id": "SI-4(23)",
+    "name": "Information System Monitoring | Host-Based Devices"
+  },
+  {
+    "id": "SI-5",
+    "name": "Security Alerts, Advisories, and Directives"
+  },
+  {
+    "id": "SI-5(1)",
+    "name": "Security Alerts, Advisories, and Directives | Automated Alerts and Advisories"
+  },
+  {
+    "id": "SI-6",
+    "name": "Security Function Verification"
+  },
+  {
+    "id": "SI-6(3)",
+    "name": "Security Function Verification | Report Verification Results"
+  },
+  {
+    "id": "SI-7",
+    "name": "Software, Firmware, and Information"
+  },
+  {
+    "id": "SI-7(1)",
+    "name": "Software, Firmware, and Information"
+  },
+  {
+    "id": "SI-7(2)",
+    "name": "Software, Firmware, and Information"
+  },
+  {
+    "id": "SI-7(5)",
+    "name": "Software, Firmware, and Information Violations"
+  },
+  {
+    "id": "SI-7(7)",
+    "name": "Software, Firmware, and Information Response"
+  },
+  {
+    "id": "SI-7(8)",
+    "name": "Software, Firmware, and Information Events"
+  },
+  {
+    "id": "SI-7(14)",
+    "name": "Software, Firmware, and Information Code"
+  },
+  {
+    "id": "SI-8",
+    "name": "Spam Protection"
+  },
+  {
+    "id": "SI-8(1)",
+    "name": "Spam Protection | Central Management of Protection Mechanisms"
+  },
+  {
+    "id": "SI-8(2)",
+    "name": "Spam Protection | Automatic Updates"
+  },
+  {
+    "id": "SI-10",
+    "name": "Information Input Validation"
+  },
+  {
+    "id": "SI-10(3)",
+    "name": "Information Input Validation | Predictable Behavior"
+  },
+  {
+    "id": "SI-11",
+    "name": "Error Handling"
+  },
+  {
+    "id": "SI-12",
+    "name": "Information Handling and Retention"
+  },
+  {
+    "id": "SI-16",
+    "name": "Memory Protection"
+  }
+]
