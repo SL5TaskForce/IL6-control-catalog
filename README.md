@@ -1,6 +1,6 @@
 # IL6 Control Catalog
 
-An interactive web application for exploring security control overlays that constitute **Information Level 6 (IL6)** — the DoD standard for cloud service providers working with classified secret information.
+An interactive web application for exploring security control overlays that constitute **Information Level 6 (IL6)**, the DoD standard for cloud service providers working with classified secret information.
 
 🌐 **Live Site:** [https://il6.sl5taskforce.org/](https://il6.sl5taskforce.org/)
 
