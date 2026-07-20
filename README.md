@@ -108,19 +108,26 @@ The application uses a PDF → JSON → Web pipeline:
 
 ### Extracting Data from PDFs
 
-```bash
-# Requires PyMuPDF (fitz)
-pip install PyMuPDF
+The extractors target **Python 3.13** (pinned in `.python-version`) and depend on PyMuPDF (fitz). Set up the environment with [uv](https://docs.astral.sh/uv/):
 
+```bash
+# Create the environment and install dependencies
+uv venv --python 3.13
+uv pip install -r requirements.txt
+```
+
+The extractor scripts write their JSON output to the **current working directory**, so run them from the repository root:
+
+```bash
 # Extract CNSSI 1253 overlay
-python cnssi_1253/extract_cnssi_1253.py cnssi_1253/CNSSI_1253_2022.pdf
+uv run python cnssi_1253/extract_cnssi_1253.py cnssi_1253/CNSSI_1253_2022.pdf
 
 # Extract Classified Information overlay
-python classified_information/extract_classified_information.py \
+uv run python classified_information/extract_classified_information.py \
     classified_information/classified_information_overlay_2022.pdf
 
 # Debug specific pages
-python cnssi_1253/extract_cnssi_1253.py cnssi_1253/CNSSI_1253_2022.pdf --debug-page 10
+uv run python cnssi_1253/extract_cnssi_1253.py cnssi_1253/CNSSI_1253_2022.pdf --debug-page 10
 ```
 
 ---
@@ -192,7 +199,7 @@ The site is deployed at [https://il6.sl5taskforce.org/](https://il6.sl5taskforce
 | Component | Dependency |
 |-----------|------------|
 | **Web App** | None (vanilla JavaScript) |
-| **PDF Extraction** | Python 3, PyMuPDF (`pip install PyMuPDF`) |
+| **PDF Extraction** | Python 3.13, PyMuPDF (`uv pip install -r requirements.txt`) |
 | **Deployment** | GitHub Pages |
 
 ---
