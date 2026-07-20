@@ -15,17 +15,29 @@ This is a web application for viewing and managing security control overlays tha
 ## Common Development Commands
 
 ### Python Data Extraction
+
+Python 3.13 (pinned in `.python-version`), managed with `uv`. Never use bare `pip` or conda.
+
 ```bash
+# One-time environment setup
+uv venv --python 3.13
+uv pip install -r requirements.txt
+
 # Extract overlay data from PDFs (requires PyMuPDF/fitz)
-python cnssi_1253/extract_cnssi_1253.py cnssi_1253/CNSSI_1253_2022.pdf
-python classified_information/extract_classified_information.py classified_information/classified_information_overlay_2022.pdf
+uv run python cnssi_1253/extract_cnssi_1253.py cnssi_1253/CNSSI_1253_2022.pdf
+uv run python classified_information/extract_classified_information.py classified_information/classified_information_overlay_2022.pdf
 
 # Debug specific pages
-python cnssi_1253/extract_cnssi_1253.py cnssi_1253/CNSSI_1253_2022.pdf --debug-page 10
+uv run python cnssi_1253/extract_cnssi_1253.py cnssi_1253/CNSSI_1253_2022.pdf --debug-page 10
 
 # Sort NIST controls naturally
-python nist_catalog/nist_sorter.py input.json output.json
+uv run python nist_catalog/nist_sorter.py input.json output.json
 ```
+
+**Extractor output paths:** `extract_*.py` write their JSON to the *current working directory* using hardcoded
+filenames, so run them from the repo root to land on the committed files. `nist_sorter.py` overwrites its input
+file when no output path is given. When regenerating output just to verify a change, run from a scratch
+directory so the committed JSON is never clobbered, then `diff` the result.
 
 ### Development
 - No build process - edit `index.html` directly
@@ -93,6 +105,6 @@ No automated tests exist. Manual testing process:
 
 ## Dependencies
 
-- **Python**: PyMuPDF (fitz) for PDF extraction
+- **Python**: 3.13, PyMuPDF (fitz) for PDF extraction (see `requirements.txt`)
 - **JavaScript**: None (vanilla JS only)
 - **Deployment**: GitHub Pages
